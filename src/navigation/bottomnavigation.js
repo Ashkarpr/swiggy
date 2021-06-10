@@ -23,18 +23,18 @@ const BottomTabNavigation = () => {
   return (
       <NavigationContainer>
     <Tab.Navigator>
-      <Tab.Screen name="-" component={HomeStack} options={{
+      <Tab.Screen name="Swiggy" component={HomeStack} options={{
         tabBarIcon: ({focused,color,size})=>(
           <Image 
           source={
             focused
-            ?require('../assets/swiggy.png')
-            : require('../assets/swiggy.png')
+            ?require('../assets/Swiggy-2.png')
+            : require('../assets/Swiggy-2.png')
           }
           style={{
-            width:45,
-            height:45,
-            top:11
+            width:30,
+            height:35,
+            top:1
           }}
           />
             ),
