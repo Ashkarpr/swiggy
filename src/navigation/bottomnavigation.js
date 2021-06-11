@@ -1,11 +1,11 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import {View,Text,Image} from 'react-native'
-import HomeStack from '../screens/home'
-import SearchStack from '../screens/search';
-import CartStack from '../screens/cart';
-import AccountStack from '../screens/account';
+import {View,Text,Image} from 'react-native';
+import HomeStack from '../navigation/homeStack';
+import SearchStack from '../navigation/searchStack';
+import CartStack from '../navigation/cartStack';
+import AccountStack from '../navigation/accountStack';
 import { NavigationContainer } from '@react-navigation/native';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Feather from 'react-native-vector-icons/Feather';
