@@ -1,12 +1,28 @@
 //import liraries
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet,Image,Button,TouchableOpacity } from 'react-native';
+import colors from '../config/color';
+
 
 // create a component
-const cart = () => {
+const cart = ({navigation}) => {
     return (
         <View style={styles.container}>
-            <Text>You are in cart</Text>
+            
+             <Image
+             style={{height:300,width:"100%",top:-150,marginBottom:-130}}
+             source={require('../assets/chef.png')}/>
+            <Text style={{fontWeight:"bold",fontSize:17,color:colors.primary,marginBottom:10}}>GOOD FOOD IS ALWAYS COOKING</Text>
+            <Text style={{color:colors.secondary}}>Your cart is empty.</Text>
+            <Text style={{color:colors.secondary,marginBottom:20}}>add somthing from the menu</Text>
+            <TouchableOpacity
+             onPress={() => navigation.navigate('Home')}>
+                 <View style={{fontWeight:"bold", borderWidth:2,height:35,width:240,borderRadius:5,justifyContent:"center",alignItems:"center",
+                borderColor:colors.home}}>
+                     <Text style={{fontWeight:"bold",color:colors.home}}> BROWSE RESTAURANTS</Text>
+                 </View>
+            </TouchableOpacity>
+         
         </View>
     );
 };
@@ -17,6 +33,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        padding:50
        
     },
 });
