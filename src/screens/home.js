@@ -4,6 +4,7 @@ import { View, Text, StyleSheet,ScrollView, TouchableOpacity ,Alert,Image,Button
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Feather from 'react-native-vector-icons/Feather';
+import colors from '../config/color';
 
 // create a component
 const App = ({navigation}) => {
@@ -249,7 +250,7 @@ const App = ({navigation}) => {
 
       <Button
         title="See all restaurants"
-        color="#d35400"
+        color={colors.home}
         style={{width:"100%",}}
         onPress={() => Alert.alert('All restaurant there')}
       />

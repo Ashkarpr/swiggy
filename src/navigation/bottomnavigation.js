@@ -32,8 +32,8 @@ const BottomTabNavigation = () => {
             : require('../assets/Swiggy-2.png')
           }
           style={{
-            width:30,
-            height:35,
+            width:25,
+            height:30,
             top:1
           }}
           />
@@ -46,10 +46,10 @@ const BottomTabNavigation = () => {
           <AntDesign name="search1" size={25} color="#4a4f51" style={{}} />
          )
       }} />
-      <Tab.Screen name="cart" component={CartStack} options={{
-        tabBarLabel:"cart",
+      <Tab.Screen name="Cart" component={CartStack} options={{
+        tabBarLabel:"Cart",
         tabBarIcon: ({focused,color,size})=>(
-          <Feather name="shopping-bag" size={25} color="#4a4f51" style={{}} />
+          <Feather name="shopping-bag" size={24} color="#4a4f51" style={{}} />
           )
       }} /> 
 
