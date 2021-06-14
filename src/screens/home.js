@@ -263,7 +263,7 @@ const App = ({navigation}) => {
         title="See all restaurants"
         color={colors.home}
         style={{width:"100%",}}
-        onPress={() => Alert.alert('All restaurant there')}
+        onPress={() => {navigation.navigate('Search')}}
       />
         </View>
         <View style={{flexDirection:"row",height:50}}>
