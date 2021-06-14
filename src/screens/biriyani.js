@@ -1,5 +1,9 @@
 import React from "react";
 import { View,Text, TextInput,StyleSheet,Image,TouchableOpacity, ScrollView,Button} from "react-native";
+import Entypo from 'react-native-vector-icons/Entypo';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+
 
 const biriyani = () =>
 {
@@ -72,19 +76,26 @@ const biriyani = () =>
 
       <ScrollView>
       <ScrollView style={{marginBottom:"100%"}}>
-        <View style={{backgroundColor:"white", marginTop:11}}>
-           <Image style={{height:20,width:20,top:"26%",left:16}} source={require('../assets/nonveg.png')}></Image>
-           <Text style={{top:"20%",left:33,fontSize:14,color:"orange"}} > BEST SELLER</Text>
-           <Text style={{top:"30%",left:20,}} >Rs 190</Text>
+      <View style={{backgroundColor:"white", marginTop:11}}>
+          <Image style={{height:20,width:20,top:"32%",left:16}} source={require('../assets/nonveg.png')}></Image>
+           <Text style={{top:"27%",left:"14%",fontSize:14,color:"orange"}} > BEST SELLER</Text>
+           <Text style={{top:"35.5%",left:22,}} >{'  '}150</Text>
+           <Entypo name="star" size={17} color="darkorange" style={{top:"17.7%",left:"10%"}}></Entypo>
+           <FontAwesome name="rupee" size={15} color="gray" style={{left:"5%",top:"26.9%"}}></FontAwesome>
          
            
        <View style={{flexDirection:"row",}}>
-          <Text style={{left:19,alignSelf:"center",fontWeight:"bold", fontSize:15,fontStyle:"normal",paddingTop:8}}>
+          <Text style={{left:18,alignSelf:"center",fontWeight:"bold", fontSize:15,fontStyle:"normal",paddingTop:8}}>
             Chicken Biriyani{'\n'}
           </Text>
           <TouchableOpacity>
-          <Image style={{borderRadius:20,height:130,width:150, marginTop:10,marginBottom:20, marginLeft:120}}source={require('../assets/1cknbiriyani.jpg')}></Image>
+          <Image style={{borderRadius:20,height:135,width:150, marginTop:10,marginBottom:20, marginLeft:110}}source={require('../assets/1cknbiriyani.jpg')}></Image>
           </TouchableOpacity>
+          <View style={{marginLeft:"-29%",marginTop:"30%"}}>
+            <TouchableOpacity >
+              <Text style={{backgroundColor:"white",fontWeight:"bold",color:"green",borderColor:"gray",textAlign:"center",fontSize:30,paddingLeft:"2%",paddingRight:"2%",paddingTop:"1%",paddingBottom:"1%",borderWidth:1,borderRadius:10}}>ADD</Text>
+            </TouchableOpacity>
+          </View>
        </View>
        
        <Text style={{top:20,textAlign:"center",color:"lightgray"}}>....................................................................................................</Text>
@@ -99,24 +110,35 @@ const biriyani = () =>
           {/* addd black star and rupee icon'''''''''''' */}
           <Text style={{color:"gray", fontWeight:"bold"}}>2.8   28 mins   rs 200 for two</Text>
           {/* add animated offer %  icon in orange color */}
-          <Text style={{top:20,color:"gray", fontWeight:"300"}}>50% off | Use WELCOMEE60</Text>
+          <Text style={{top:20,color:"gray", fontWeight:"300",marginLeft:"4%"}}>50% off | Use WELCOMEE60</Text>
+          <MaterialCommunityIcons name="brightness-percent" size={13} color="darkorange" style={{top:"10%"}}></MaterialCommunityIcons>
+          
           </View>
         </TouchableOpacity>
         </View>
 
         <View style={{backgroundColor:"white", marginTop:11}}>
-           <Image style={{height:20,width:20,top:"26%",left:16}} source={require('../assets/nonveg.png')}></Image>
-           <Text style={{top:"20%",left:33,fontSize:14,color:"orange"}} > BEST SELLER</Text>
-           <Text style={{top:"30%",left:20,}} >Rs 200</Text>
+          <Image style={{height:20,width:20,top:"32%",left:16}} source={require('../assets/nonveg.png')}></Image>
+           <Text style={{top:"27%",left:"14%",fontSize:14,color:"orange"}} > BEST SELLER</Text>
+           <Text style={{top:"35.5%",left:22,}} >{'  '}150</Text>
+           <Entypo name="star" size={17} color="darkorange" style={{top:"17.7%",left:"10%"}}></Entypo>
+           <FontAwesome name="rupee" size={15} color="gray" style={{left:"5%",top:"26.9%"}}></FontAwesome>
+         
            
        <View style={{flexDirection:"row",}}>
-          <Text style={{left:19,alignSelf:"center",fontWeight:"bold", fontSize:15,fontStyle:"normal",paddingTop:8}}>
+          <Text style={{left:18,alignSelf:"center",fontWeight:"bold", fontSize:15,fontStyle:"normal",paddingTop:8}}>
             Chicken Biriyani{'\n'}
           </Text>
           <TouchableOpacity>
-          <Image style={{borderRadius:20,height:130,width:150, marginTop:10,marginBottom:20, marginLeft:120}}source={require('../assets/3hdrcknbrn.jpg')}></Image>
+          <Image style={{borderRadius:20,height:135,width:150, marginTop:10,marginBottom:20, marginLeft:110}}source={require('../assets/3hdrcknbrn.jpg')}></Image>
           </TouchableOpacity>
+          <View style={{marginLeft:"-29%",marginTop:"30%"}}>
+            <TouchableOpacity >
+              <Text style={{backgroundColor:"white",fontWeight:"bold",color:"green",borderColor:"gray",textAlign:"center",fontSize:30,paddingLeft:"2%",paddingRight:"2%",paddingTop:"1%",paddingBottom:"1%",borderWidth:1,borderRadius:10}}>ADD</Text>
+            </TouchableOpacity>
+          </View>
        </View>
+       
        <Text style={{top:20,textAlign:"center",color:"lightgray"}}>....................................................................................................</Text>
 
         <TouchableOpacity>
@@ -129,24 +151,34 @@ const biriyani = () =>
           {/* addd black star and rupee icon'''''''''''' */}
           <Text style={{color:"gray", fontWeight:"bold"}}>2.8   28 mins   rs 200 for two</Text>
           {/* add animated offer %  icon in orange color */}
-          <Text style={{top:20,color:"gray", fontWeight:"300"}}>50% off | Use WELCOMEE60</Text>
+          <Text style={{top:20,color:"gray", fontWeight:"300",marginLeft:"4%"}}>50% off | Use WELCOMEE60</Text>
+          <MaterialCommunityIcons name="brightness-percent" size={13} color="darkorange" style={{top:"10%"}}></MaterialCommunityIcons>
           </View>
         </TouchableOpacity>
         </View>
 
         <View style={{backgroundColor:"white", marginTop:11}}>
-           <Image style={{height:20,width:20,top:"26%",left:16}} source={require('../assets/nonveg.png')}></Image>
-           <Text style={{top:"20%",left:33,fontSize:14,color:"orange"}} > BEST SELLER</Text>
-           <Text style={{top:"30%",left:20,}} >Rs 150</Text>
+          <Image style={{height:20,width:20,top:"32%",left:16}} source={require('../assets/nonveg.png')}></Image>
+           <Text style={{top:"27%",left:"14%",fontSize:14,color:"orange"}} > BEST SELLER</Text>
+           <Text style={{top:"35.5%",left:22,}} >{'  '}150</Text>
+           <Entypo name="star" size={17} color="darkorange" style={{top:"17.7%",left:"10%"}}></Entypo>
+           <FontAwesome name="rupee" size={15} color="gray" style={{left:"5%",top:"26.9%"}}></FontAwesome>
+         
            
        <View style={{flexDirection:"row",}}>
-          <Text style={{left:19,alignSelf:"center",fontWeight:"bold", fontSize:15,fontStyle:"normal",paddingTop:8}}>
+          <Text style={{left:18,alignSelf:"center",fontWeight:"bold", fontSize:15,fontStyle:"normal",paddingTop:8}}>
             Chicken Biriyani{'\n'}
           </Text>
           <TouchableOpacity>
-          <Image style={{borderRadius:20,height:130,width:150, marginTop:10,marginBottom:20, marginLeft:120}}source={require('../assets/2hdrbrn.jpg')}></Image>
+          <Image style={{borderRadius:20,height:135,width:150, marginTop:10,marginBottom:20, marginLeft:110}}source={require('../assets/bfrbn.jpg')}></Image>
           </TouchableOpacity>
+          <View style={{marginLeft:"-29%",marginTop:"30%"}}>
+            <TouchableOpacity >
+              <Text style={{backgroundColor:"white",fontWeight:"bold",color:"green",borderColor:"gray",textAlign:"center",fontSize:30,paddingLeft:"2%",paddingRight:"2%",paddingTop:"1%",paddingBottom:"1%",borderWidth:1,borderRadius:10}}>ADD</Text>
+            </TouchableOpacity>
+          </View>
        </View>
+       
        <Text style={{top:20,textAlign:"center",color:"lightgray"}}>....................................................................................................</Text>
 
         <TouchableOpacity>
@@ -159,24 +191,34 @@ const biriyani = () =>
           {/* addd black star and rupee icon'''''''''''' */}
           <Text style={{color:"gray", fontWeight:"bold"}}>2.8   28 mins   rs 200 for two</Text>
           {/* add animated offer %  icon in orange color */}
-          <Text style={{top:20,color:"gray", fontWeight:"300"}}>50% off | Use WELCOMEE60</Text>
+          <Text style={{top:20,color:"gray", fontWeight:"300",marginLeft:"4%"}}>50% off | Use WELCOMEE60</Text>
+          <MaterialCommunityIcons name="brightness-percent" size={13} color="darkorange" style={{top:"10%"}}></MaterialCommunityIcons>
           </View>
         </TouchableOpacity>
         </View>
 
         <View style={{backgroundColor:"white", marginTop:11}}>
-           <Image style={{height:20,width:20,top:"26%",left:16}} source={require('../assets/nonveg.png')}></Image>
-           <Text style={{top:"20%",left:33,fontSize:14,color:"orange"}} > BEST SELLER</Text>
-           <Text style={{top:"30%",left:20,}} >Rs 180</Text>
+          <Image style={{height:20,width:20,top:"32%",left:16}} source={require('../assets/nonveg.png')}></Image>
+           <Text style={{top:"27%",left:"14%",fontSize:14,color:"orange"}} > BEST SELLER</Text>
+           <Text style={{top:"35.5%",left:22,}} >{'  '}150</Text>
+           <Entypo name="star" size={17} color="darkorange" style={{top:"17.7%",left:"10%"}}></Entypo>
+           <FontAwesome name="rupee" size={15} color="gray" style={{left:"5%",top:"26.9%"}}></FontAwesome>
+         
            
        <View style={{flexDirection:"row",}}>
-          <Text style={{left:19,alignSelf:"center",fontWeight:"bold", fontSize:15,fontStyle:"normal",paddingTop:8}}>
+          <Text style={{left:18,alignSelf:"center",fontWeight:"bold", fontSize:15,fontStyle:"normal",paddingTop:8}}>
             Chicken Biriyani{'\n'}
           </Text>
           <TouchableOpacity>
-          <Image style={{borderRadius:20,height:130,width:150, marginTop:10,marginBottom:20, marginLeft:120}}source={require('../assets/bfrbn.jpg')}></Image>
+          <Image style={{borderRadius:20,height:135,width:150, marginTop:10,marginBottom:20, marginLeft:110}}source={require('../assets/2hdrbrn.jpg')}></Image>
           </TouchableOpacity>
+          <View style={{marginLeft:"-29%",marginTop:"30%"}}>
+            <TouchableOpacity >
+              <Text style={{backgroundColor:"white",fontWeight:"bold",color:"green",borderColor:"gray",textAlign:"center",fontSize:30,paddingLeft:"2%",paddingRight:"2%",paddingTop:"1%",paddingBottom:"1%",borderWidth:1,borderRadius:10}}>ADD</Text>
+            </TouchableOpacity>
+          </View>
        </View>
+       
        <Text style={{top:20,textAlign:"center",color:"lightgray"}}>....................................................................................................</Text>
 
         <TouchableOpacity>
@@ -189,25 +231,35 @@ const biriyani = () =>
           {/* addd black star and rupee icon'''''''''''' */}
           <Text style={{color:"gray", fontWeight:"bold"}}>2.8   28 mins   rs 200 for two</Text>
           {/* add animated offer %  icon in orange color */}
-          <Text style={{top:20,color:"gray", fontWeight:"300"}}>50% off | Use WELCOMEE60</Text>
+          <Text style={{top:20,color:"gray", fontWeight:"300",marginLeft:"4%"}}>50% off | Use WELCOMEE60</Text>
+          <MaterialCommunityIcons name="brightness-percent" size={13} color="darkorange" style={{top:"10%"}}></MaterialCommunityIcons>
           </View>
         </TouchableOpacity>
         </View>
 
          
         <View style={{backgroundColor:"white", marginTop:11}}>
-           <Image style={{height:20,width:20,top:"26%",left:16}} source={require('../assets/nonveg.png')}></Image>
-           <Text style={{top:"20%",left:33,fontSize:14,color:"orange"}} > BEST SELLER</Text>
-           <Text style={{top:"30%",left:20,}} >Rs 199</Text>
+          <Image style={{height:20,width:20,top:"32%",left:16}} source={require('../assets/nonveg.png')}></Image>
+           <Text style={{top:"27%",left:"14%",fontSize:14,color:"orange"}} > BEST SELLER</Text>
+           <Text style={{top:"35.5%",left:22,}} >{'  '}150</Text>
+           <Entypo name="star" size={17} color="darkorange" style={{top:"17.7%",left:"10%"}}></Entypo>
+           <FontAwesome name="rupee" size={15} color="gray" style={{left:"5%",top:"26.9%"}}></FontAwesome>
+         
            
        <View style={{flexDirection:"row",}}>
-          <Text style={{left:19,alignSelf:"center",fontWeight:"bold", fontSize:15,fontStyle:"normal",paddingTop:8}}>
+          <Text style={{left:18,alignSelf:"center",fontWeight:"bold", fontSize:15,fontStyle:"normal",paddingTop:8}}>
             Chicken Biriyani{'\n'}
           </Text>
           <TouchableOpacity>
-          <Image style={{borderRadius:20,height:130,width:150, marginTop:10,marginBottom:20, marginLeft:120}}source={require('../assets/bfb1.jpg')}></Image>
+          <Image style={{borderRadius:20,height:135,width:150, marginTop:10,marginBottom:20, marginLeft:110}}source={require('../assets/bfb1.jpg')}></Image>
           </TouchableOpacity>
+          <View style={{marginLeft:"-29%",marginTop:"30%"}}>
+            <TouchableOpacity >
+              <Text style={{backgroundColor:"white",fontWeight:"bold",color:"green",borderColor:"gray",textAlign:"center",fontSize:30,paddingLeft:"2%",paddingRight:"2%",paddingTop:"1%",paddingBottom:"1%",borderWidth:1,borderRadius:10}}>ADD</Text>
+            </TouchableOpacity>
+          </View>
        </View>
+
        <Text style={{top:20,textAlign:"center",color:"lightgray"}}>....................................................................................................</Text>
 
         <TouchableOpacity>
@@ -220,7 +272,8 @@ const biriyani = () =>
           {/* addd black star and rupee icon'''''''''''' */}
           <Text style={{color:"gray", fontWeight:"bold"}}>2.8   28 mins   rs 200 for two</Text>
           {/* add animated offer %  icon in orange color */}
-          <Text style={{top:20,color:"gray", fontWeight:"300"}}>50% off | Use WELCOMEE60</Text>
+          <Text style={{top:20,color:"gray", fontWeight:"300",marginLeft:"4%"}}>50% off | Use WELCOMEE60</Text>
+          <MaterialCommunityIcons name="brightness-percent" size={13} color="darkorange" style={{top:"10%"}}></MaterialCommunityIcons>
           </View>
         </TouchableOpacity>
         </View>
