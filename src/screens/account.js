@@ -4,15 +4,18 @@ import { View, Text, StyleSheet,Image,TextInput,Button,TouchableOpacity,Alert} f
 import colors from '../config/color';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
+import { createStackNavigator } from '@react-navigation/stack';
+
+const Stack = createStackNavigator();
 
 
-// create a component
 
 const Separator = () => (
     <View style={styles.separator} />
   );
+ 
   
-const account = () => {
+const account = ({navigation }) => {
     return (
         <View style={styles.container}>
              <View style={{backgroundColor:"#dde2ec",width:"100%",top:-150,height:"75%",}}>
@@ -32,8 +35,8 @@ const account = () => {
              <Button
                 title="LOGIN"
                 color={colors.home}
-                onPress={() => Alert.alert('Button with adjusted color pressed')}
-                 />
+                onPress={() => navigation.navigate('Modal')}/>
+                 
                  <Separator/>
                  <TouchableOpacity
                  onPress={() => Alert.alert('Button with adjusted color pressed')}>

@@ -8,7 +8,7 @@ const Stack = createStackNavigator();
 
 const CartStack =({navigation}) => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator headerMode={false}>
       <Stack.Screen name="Cart" component={CartScreen}/>
 
     </Stack.Navigator>

@@ -8,7 +8,7 @@ const Stack = createStackNavigator();
 
 const SearchStack =({navigation}) => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator headerMode={false}>
       <Stack.Screen name="Search" component={SearchScreen}/>
 
     </Stack.Navigator>
