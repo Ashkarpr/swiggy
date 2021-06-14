@@ -10,7 +10,7 @@ const cart = ({navigation}) => {
         <View style={styles.container}>
             
              <Image
-             style={{height:300,width:"100%",top:-150,marginBottom:-130}}
+             style={{height:300,width:"100%",top:-50,marginBottom:-50}}
              source={require('../assets/chef.png')}/>
             <Text style={{fontWeight:"bold",fontSize:17,color:colors.primary,marginBottom:10}}>GOOD FOOD IS ALWAYS COOKING</Text>
             <Text style={{color:colors.secondary}}>Your cart is empty.</Text>
@@ -18,7 +18,7 @@ const cart = ({navigation}) => {
             <TouchableOpacity
              onPress={() => navigation.navigate('Home')}>
                  <View style={{fontWeight:"bold", borderWidth:2,height:35,width:240,borderRadius:5,justifyContent:"center",alignItems:"center",
-                borderColor:colors.home}}>
+                borderColor:colors.home,marginTop:10}}>
                      <Text style={{fontWeight:"bold",color:colors.home}}> BROWSE RESTAURANTS</Text>
                  </View>
             </TouchableOpacity>
