@@ -75,31 +75,33 @@ const pizza = () =>
 
       {/* pictures started............................ ..........................................................*/}
 
-      <ScrollView>
-      <ScrollView style={{marginBottom:"100%"}}>
+      <ScrollView style={{marginTop:11}}>
+      <ScrollView style={{marginBottom:"100%",marginTop:"-25%"}}>
       <View style={{backgroundColor:"white", marginTop:11}}>
-          <Image style={{height:20,width:20,top:"32%",left:16}} source={require('../assets/veg1.png')}></Image>
-           <Text style={{top:"27%",left:"14%",fontSize:14,color:"orange"}} > MUST TRY</Text>
-           <Text style={{top:"35.5%",left:22,}} >{'  '}69</Text>
-           <Entypo name="star" size={17} color="darkorange" style={{top:"17.7%",left:"10%"}}></Entypo>
-           <FontAwesome name="rupee" size={15} color="gray" style={{left:"5%",top:"26.9%"}}></FontAwesome>
+          <Image style={{height:20,width:20,top:"35%",left:16}} source={require('../assets/veg1.png')}></Image>
+           <Text style={{top:"30%",left:"14%",fontSize:14,color:"orange"}} > MUST TRY</Text>
+           <Text style={{top:"37%",left:22,}} >{'  '}69</Text>
+           <Entypo name="star" size={17} color="darkorange" style={{top:"20%",left:"10%"}}></Entypo>
+           <FontAwesome name="rupee" size={15} color="gray" style={{left:"5%",top:"28%"}}></FontAwesome>
          
            
        <View style={{flexDirection:"row",}}>
           <Text style={{left:18,alignSelf:"center",fontWeight:"bold", fontSize:15,fontStyle:"normal",paddingTop:8}}>
-            Tomato Pizza{'\n'}
+            Mushroom Pizza{'\n'}
           </Text>
           <TouchableOpacity>
-          <Image style={{borderRadius:20,height:135,width:150, marginTop:10,marginBottom:20, marginLeft:130}}source={require('../assets/tp.jpg')}></Image>
+          <Image style={{borderRadius:20,height:135,width:150, marginTop:10,marginBottom:20, marginLeft:110}}source={require('../assets/bbqp.jpg')}></Image>
           </TouchableOpacity>
-          <View style={{marginLeft:"-29%",marginTop:"30%"}}>
+          <View style={{marginLeft:"-31%",marginTop:"32%",width:"25%"}}>
             <TouchableOpacity >
-              <Text style={{backgroundColor:"white",fontWeight:"bold",color:"green",borderColor:"gray",textAlign:"center",fontSize:30,paddingLeft:"2%",paddingRight:"2%",paddingTop:"1%",paddingBottom:"1%",borderWidth:1,borderRadius:10}}>ADD</Text>
+              <Text style={{backgroundColor:"white",fontWeight:"bold",color:"green",borderColor:"gray",
+              textAlign:"center",fontSize:20,paddingTop:"1%",paddingBottom:"1%",
+              borderWidth:1,borderRadius:10}}>ADD</Text>
             </TouchableOpacity>
           </View>
        </View>
        
-       <Text style={{top:20,textAlign:"center",color:"lightgray"}}>....................................................................................................</Text>
+       <Text style={{top:5,textAlign:"center",color:"lightgray"}}>....................................................................................................</Text>
 
         <TouchableOpacity>
           <View style={{marginLeft:"4%",flexDirection:"row",paddingTop:"5%"}}> 
@@ -107,9 +109,9 @@ const pizza = () =>
           <Text style={{fontWeight:"400"}}> La Pinos'z Pizza</Text>
           {/* Orange star icon and rupee icon add... */}
           </View>
-          <View style={{paddingLeft:"4%",backgroundColor:"white",marginBottom:40}}>
+          <View style={{paddingLeft:"4%",backgroundColor:"white",marginBottom:"5%"}}>
           {/* addd black star and rupee icon'''''''''''' */}
-          <Text style={{color:"gray", fontWeight:"bold"}}>2.8   28 mins   rs 200 for two</Text>
+          <Text style={{color:"gray",top:"16%", fontWeight:"bold"}}>2.8   28 mins   rs 200 for two</Text>
           {/* add animated offer %  icon in orange color */}
           <Text style={{top:20,color:"gray", fontWeight:"300",marginLeft:"4%"}}>50% off | Use WELCOMEE60</Text>
           <MaterialCommunityIcons name="brightness-percent" size={13} color="darkorange" style={{top:"10%"}}></MaterialCommunityIcons>
@@ -117,8 +119,8 @@ const pizza = () =>
         </TouchableOpacity>
         </View>
 
-
-<View style={{backgroundColor:"white", marginTop:11}}>
+        <View style={{backgroundColor:"white",marginTop:"3%"}}>
+<View style={{marginTop:"-24%"}}>
 <Image style={{height:20,width:20,top:"32%",left:16}} source={require('../assets/veg1.png')}></Image>
            <Text style={{top:"27%",left:"14%",fontSize:14,color:"orange"}} > BEST SELLER</Text>
            <Text style={{top:"35.5%",left:22,}} >{'  '}100</Text>
@@ -130,15 +132,17 @@ const pizza = () =>
             7" Barbecue Chicken Pizza{'\n'}
           </Text>
           <TouchableOpacity>
-          <Image style={{borderRadius:20,height:130,width:150, marginTop:10,marginBottom:20, marginLeft:40}}source={require('../assets/bbqp.jpg')}></Image>
+          <Image style={{borderRadius:20,height:130,width:150, marginTop:10,marginBottom:20, marginLeft:40}}source={require('../assets/tp.jpg')}></Image>
           </TouchableOpacity>
-          <View style={{marginLeft:"-29%",marginTop:"30%"}}>
+          <View style={{marginLeft:"-31%",marginTop:"32%",width:"25%"}}>
             <TouchableOpacity >
-              <Text style={{backgroundColor:"white",fontWeight:"bold",color:"green",borderColor:"gray",textAlign:"center",fontSize:30,paddingLeft:"2%",paddingRight:"2%",paddingTop:"1%",paddingBottom:"1%",borderWidth:1,borderRadius:10}}>ADD</Text>
+              <Text style={{backgroundColor:"white",fontWeight:"bold",color:"green",borderColor:"gray",
+              textAlign:"center",fontSize:20,paddingTop:"1%",paddingBottom:"2%",
+              borderWidth:1,borderRadius:10}}>ADD</Text>
             </TouchableOpacity>
           </View>
        </View>
-       <Text style={{top:20,textAlign:"center",color:"lightgray"}}>....................................................................................................</Text>
+       <Text style={{top:5,textAlign:"center",color:"lightgray"}}>....................................................................................................</Text>
 
         <TouchableOpacity>
           <View style={{marginLeft:"4%",flexDirection:"row",paddingTop:"5%"}}> 
@@ -148,16 +152,17 @@ const pizza = () =>
           </View>
           <View style={{paddingLeft:"4%",backgroundColor:"white",marginBottom:40}}>
           {/* addd black star and rupee icon'''''''''''' */}
-          <Text style={{color:"gray", fontWeight:"bold"}}>2.8   28 mins   rs 200 for two</Text>
+          <Text style={{color:"gray", fontWeight:"bold",top:"16%"}}>2.8   28 mins   rs 200 for two</Text>
           {/* add animated offer %  icon in orange color */}
           <Text style={{top:20,color:"gray", fontWeight:"300",marginLeft:"4%"}}>50% off | Use WELCOMEE60</Text>
           <MaterialCommunityIcons name="brightness-percent" size={13} color="darkorange" style={{top:"10%"}}></MaterialCommunityIcons>
           </View>
         </TouchableOpacity>
-        
+        </View>
         </View>
 
-        <View style={{backgroundColor:"white", marginTop:11}}>
+        <View style={{backgroundColor:"white",marginTop:"3%"}}>
+<View style={{marginTop:"-24%"}}>
 <Image style={{height:20,width:20,top:"32%",left:16}} source={require('../assets/veg1.png')}></Image>
            <Text style={{top:"27%",left:"14%",fontSize:14,color:"orange"}} > BEST SELLER</Text>
            <Text style={{top:"35.5%",left:22,}} >{'  '}100</Text>
@@ -171,13 +176,15 @@ const pizza = () =>
           <TouchableOpacity>
           <Image style={{borderRadius:20,height:130,width:150, marginTop:10,marginBottom:20, marginLeft:40}}source={require('../assets/beefp.jpg')}></Image>
           </TouchableOpacity>
-          <View style={{marginLeft:"-29%",marginTop:"30%"}}>
+          <View style={{marginLeft:"-31%",marginTop:"32%",width:"25%"}}>
             <TouchableOpacity >
-              <Text style={{backgroundColor:"white",fontWeight:"bold",color:"green",borderColor:"gray",textAlign:"center",fontSize:30,paddingLeft:"2%",paddingRight:"2%",paddingTop:"1%",paddingBottom:"1%",borderWidth:1,borderRadius:10}}>ADD</Text>
+              <Text style={{backgroundColor:"white",fontWeight:"bold",color:"green",borderColor:"gray",
+              textAlign:"center",fontSize:20,paddingTop:"1%",paddingBottom:"1%",
+              borderWidth:1,borderRadius:10}}>ADD</Text>
             </TouchableOpacity>
           </View>
        </View>
-       <Text style={{top:20,textAlign:"center",color:"lightgray"}}>....................................................................................................</Text>
+       <Text style={{top:5,textAlign:"center",color:"lightgray"}}>....................................................................................................</Text>
 
         <TouchableOpacity>
           <View style={{marginLeft:"4%",flexDirection:"row",paddingTop:"5%"}}> 
@@ -187,16 +194,17 @@ const pizza = () =>
           </View>
           <View style={{paddingLeft:"4%",backgroundColor:"white",marginBottom:40}}>
           {/* addd black star and rupee icon'''''''''''' */}
-          <Text style={{color:"gray", fontWeight:"bold"}}>2.8   28 mins   rs 200 for two</Text>
+          <Text style={{color:"gray", fontWeight:"bold",top:"16%"}}>2.8   28 mins   rs 200 for two</Text>
           {/* add animated offer %  icon in orange color */}
           <Text style={{top:20,color:"gray", fontWeight:"300",marginLeft:"4%"}}>50% off | Use WELCOMEE60</Text>
           <MaterialCommunityIcons name="brightness-percent" size={13} color="darkorange" style={{top:"10%"}}></MaterialCommunityIcons>
           </View>
         </TouchableOpacity>
-        
+        </View>
         </View>
 
-        <View style={{backgroundColor:"white", marginTop:11}}>
+        <View style={{backgroundColor:"white",marginTop:"3%"}}>
+<View style={{marginTop:"-24%"}}>
         <Image style={{height:20,width:20,top:"32%",left:16}} source={require('../assets/veg1.png')}></Image>
            <Text style={{top:"27%",left:"14%",fontSize:14,color:"orange"}} > BEST SELLER</Text>
            <Text style={{top:"35.5%",left:22,}} >{'  '}100</Text>
@@ -210,13 +218,15 @@ const pizza = () =>
           <TouchableOpacity>
           <Image style={{borderRadius:20,height:130,width:150, marginTop:10,marginBottom:20, marginLeft:70}}source={require('../assets/pizza.jpg')}></Image>
           </TouchableOpacity>
-          <View style={{marginLeft:"-29%",marginTop:"30%"}}>
+          <View style={{marginLeft:"-31%",marginTop:"32%",width:"25%"}}>
             <TouchableOpacity >
-              <Text style={{backgroundColor:"white",fontWeight:"bold",color:"green",borderColor:"gray",textAlign:"center",fontSize:30,paddingLeft:"2%",paddingRight:"2%",paddingTop:"1%",paddingBottom:"1%",borderWidth:1,borderRadius:10}}>ADD</Text>
+              <Text style={{backgroundColor:"white",fontWeight:"bold",color:"green",borderColor:"gray",
+              textAlign:"center",fontSize:20,paddingTop:"1%",paddingBottom:"1%",
+              borderWidth:1,borderRadius:10}}>ADD</Text>
             </TouchableOpacity>
           </View>
        </View>
-       <Text style={{top:20,textAlign:"center",color:"lightgray"}}>....................................................................................................</Text>
+       <Text style={{top:5,textAlign:"center",color:"lightgray"}}>....................................................................................................</Text>
 
         <TouchableOpacity>
           <View style={{marginLeft:"4%",flexDirection:"row",paddingTop:"5%"}}> 
@@ -226,17 +236,18 @@ const pizza = () =>
           </View>
           <View style={{paddingLeft:"4%",backgroundColor:"white",marginBottom:40}}>
           {/* addd black star and rupee icon'''''''''''' */}
-          <Text style={{color:"gray", fontWeight:"bold"}}>2.8   28 mins   rs 200 for two</Text>
+          <Text style={{color:"gray", fontWeight:"bold",top:"16%"}}>2.8   28 mins   rs 200 for two</Text>
           {/* add animated offer %  icon in orange color */}
           <Text style={{top:20,color:"gray", fontWeight:"300",marginLeft:"4%"}}>50% off | Use WELCOMEE60</Text>
           <MaterialCommunityIcons name="brightness-percent" size={13} color="darkorange" style={{top:"10%"}}></MaterialCommunityIcons>
           </View>
         </TouchableOpacity>
         </View>
-
+        </View>
          
-        <View style={{backgroundColor:"white", marginTop:11}}>
-        <Image style={{height:20,width:20,top:"32%",left:16}} source={require('../assets/veg1.png')}></Image>
+        <View style={{backgroundColor:"white",marginTop:"3%"}}>
+<View style={{marginTop:"-24%"}}>
+<Image style={{height:20,width:20,top:"32%",left:16}} source={require('../assets/veg1.png')}></Image>
            <Text style={{top:"27%",left:"14%",fontSize:14,color:"orange"}} > BEST SELLER</Text>
            <Text style={{top:"35.5%",left:22,}} >{'  '}100</Text>
            <Entypo name="star" size={17} color="darkorange" style={{top:"17.7%",left:"10%"}}></Entypo>
@@ -244,34 +255,38 @@ const pizza = () =>
            
        <View style={{flexDirection:"row",}}>
           <Text style={{left:19,alignSelf:"center",fontWeight:"bold", fontSize:15,fontStyle:"normal",paddingTop:8}}>
-            Beef Delicious Pizza{'\n'}
+            7" Barbecue Chicken Pizza{'\n'}
           </Text>
           <TouchableOpacity>
-          <Image style={{borderRadius:20,height:130,width:150, marginTop:10,marginBottom:20, marginLeft:80}}source={require('../assets/beefp.jpg')}></Image>
+          <Image style={{borderRadius:20,height:130,width:150, marginTop:10,marginBottom:20, marginLeft:40}}source={require('../assets/bbqp.jpg')}></Image>
           </TouchableOpacity>
-          <View style={{marginLeft:"-29%",marginTop:"30%"}}>
+          <View style={{marginLeft:"-31%",marginTop:"32%",width:"25%"}}>
             <TouchableOpacity >
-              <Text style={{backgroundColor:"white",fontWeight:"bold",color:"green",borderColor:"gray",textAlign:"center",fontSize:30,paddingLeft:"2%",paddingRight:"2%",paddingTop:"1%",paddingBottom:"1%",borderWidth:1,borderRadius:10}}>ADD</Text>
+              <Text style={{backgroundColor:"white",fontWeight:"bold",color:"green",borderColor:"gray",
+              textAlign:"center",fontSize:20,paddingTop:"1%",paddingBottom:"2%",
+              borderWidth:1,borderRadius:10}}>ADD</Text>
             </TouchableOpacity>
           </View>
        </View>
-       <Text style={{top:20,textAlign:"center",color:"lightgray"}}>....................................................................................................</Text>
+       <Text style={{top:5,textAlign:"center",color:"lightgray"}}>....................................................................................................</Text>
 
         <TouchableOpacity>
           <View style={{marginLeft:"4%",flexDirection:"row",paddingTop:"5%"}}> 
           <Text style={{color:"gray"}}>From</Text>
-          <Text style={{fontWeight:"400"}}> Addams Pizza</Text>
+          <Text style={{fontWeight:"400"}}> Canosa</Text>
           {/* Orange star icon and rupee icon add... */}
           </View>
           <View style={{paddingLeft:"4%",backgroundColor:"white",marginBottom:40}}>
           {/* addd black star and rupee icon'''''''''''' */}
-          <Text style={{color:"gray", fontWeight:"bold"}}>2.8   28 mins   rs 200 for two</Text>
+          <Text style={{color:"gray", fontWeight:"bold",top:10}}>2.8   28 mins   rs 200 for two</Text>
           {/* add animated offer %  icon in orange color */}
           <Text style={{top:20,color:"gray", fontWeight:"300",marginLeft:"4%"}}>50% off | Use WELCOMEE60</Text>
           <MaterialCommunityIcons name="brightness-percent" size={13} color="darkorange" style={{top:"10%"}}></MaterialCommunityIcons>
           </View>
         </TouchableOpacity>
         </View>
+        </View>
+
         </ScrollView>
      </ScrollView>
     </View>

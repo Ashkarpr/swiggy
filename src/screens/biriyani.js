@@ -74,8 +74,8 @@ const biriyani = () =>
 
       {/* pictures started............................ ..........................................................*/}
 
-      <ScrollView>
-      <ScrollView style={{marginBottom:"100%"}}>
+      <ScrollView style={{marginTop:11}}>
+      <ScrollView style={{marginBottom:"100%",marginTop:"-25%"}}>
       <View style={{backgroundColor:"white", marginTop:11}}>
           <Image style={{height:20,width:20,top:"32%",left:16}} source={require('../assets/nonveg.png')}></Image>
            <Text style={{top:"27%",left:"14%",fontSize:14,color:"orange"}} > BEST SELLER</Text>
@@ -91,14 +91,16 @@ const biriyani = () =>
           <TouchableOpacity>
           <Image style={{borderRadius:20,height:135,width:150, marginTop:10,marginBottom:20, marginLeft:110}}source={require('../assets/1cknbiriyani.jpg')}></Image>
           </TouchableOpacity>
-          <View style={{marginLeft:"-29%",marginTop:"30%"}}>
+          <View style={{marginLeft:"-31%",marginTop:"32%",width:"25%"}}>
             <TouchableOpacity >
-              <Text style={{backgroundColor:"white",fontWeight:"bold",color:"green",borderColor:"gray",textAlign:"center",fontSize:30,paddingLeft:"2%",paddingRight:"2%",paddingTop:"1%",paddingBottom:"1%",borderWidth:1,borderRadius:10}}>ADD</Text>
+              <Text style={{backgroundColor:"white",fontWeight:"bold",color:"green",borderColor:"gray",
+              textAlign:"center",fontSize:20,paddingTop:"1%",paddingBottom:"1%",
+              borderWidth:1,borderRadius:10}}>ADD</Text>
             </TouchableOpacity>
-          </View>
+            </View>
        </View>
        
-       <Text style={{top:20,textAlign:"center",color:"lightgray"}}>....................................................................................................</Text>
+       <Text style={{top:5,textAlign:"center",color:"lightgray"}}>....................................................................................................</Text>
 
         <TouchableOpacity>
           <View style={{marginLeft:"4%",flexDirection:"row",paddingTop:"5%"}}> 
@@ -108,7 +110,7 @@ const biriyani = () =>
           </View>
           <View style={{paddingLeft:"4%",backgroundColor:"white",marginBottom:40}}>
           {/* addd black star and rupee icon'''''''''''' */}
-          <Text style={{color:"gray", fontWeight:"bold"}}>2.8   28 mins   rs 200 for two</Text>
+          <Text style={{color:"gray", fontWeight:"bold",top:"16%"}}>2.8   28 mins   rs 200 for two</Text>
           {/* add animated offer %  icon in orange color */}
           <Text style={{top:20,color:"gray", fontWeight:"300",marginLeft:"4%"}}>50% off | Use WELCOMEE60</Text>
           <MaterialCommunityIcons name="brightness-percent" size={13} color="darkorange" style={{top:"10%"}}></MaterialCommunityIcons>
@@ -117,7 +119,8 @@ const biriyani = () =>
         </TouchableOpacity>
         </View>
 
-        <View style={{backgroundColor:"white", marginTop:11}}>
+        <View style={{backgroundColor:"white",marginTop:"3%"}}>
+<View style={{marginTop:"-24%"}}>
           <Image style={{height:20,width:20,top:"32%",left:16}} source={require('../assets/nonveg.png')}></Image>
            <Text style={{top:"27%",left:"14%",fontSize:14,color:"orange"}} > BEST SELLER</Text>
            <Text style={{top:"35.5%",left:22,}} >{'  '}150</Text>
@@ -132,14 +135,16 @@ const biriyani = () =>
           <TouchableOpacity>
           <Image style={{borderRadius:20,height:135,width:150, marginTop:10,marginBottom:20, marginLeft:110}}source={require('../assets/3hdrcknbrn.jpg')}></Image>
           </TouchableOpacity>
-          <View style={{marginLeft:"-29%",marginTop:"30%"}}>
+          <View style={{marginLeft:"-31%",marginTop:"32%",width:"25%"}}>
             <TouchableOpacity >
-              <Text style={{backgroundColor:"white",fontWeight:"bold",color:"green",borderColor:"gray",textAlign:"center",fontSize:30,paddingLeft:"2%",paddingRight:"2%",paddingTop:"1%",paddingBottom:"1%",borderWidth:1,borderRadius:10}}>ADD</Text>
+              <Text style={{backgroundColor:"white",fontWeight:"bold",color:"green",borderColor:"gray",
+              textAlign:"center",fontSize:20,paddingTop:"1%",paddingBottom:"1%",
+              borderWidth:1,borderRadius:10}}>ADD</Text>
             </TouchableOpacity>
-          </View>
+            </View>
        </View>
        
-       <Text style={{top:20,textAlign:"center",color:"lightgray"}}>....................................................................................................</Text>
+       <Text style={{top:5,textAlign:"center",color:"lightgray"}}>....................................................................................................</Text>
 
         <TouchableOpacity>
           <View style={{marginLeft:"4%",flexDirection:"row",paddingTop:"5%"}}> 
@@ -149,15 +154,18 @@ const biriyani = () =>
           </View>
           <View style={{paddingLeft:"4%",backgroundColor:"white",marginBottom:40}}>
           {/* addd black star and rupee icon'''''''''''' */}
-          <Text style={{color:"gray", fontWeight:"bold"}}>2.8   28 mins   rs 200 for two</Text>
+          <Text style={{color:"gray", fontWeight:"bold",top:"16%"}}>2.8   28 mins   rs 200 for two</Text>
           {/* add animated offer %  icon in orange color */}
           <Text style={{top:20,color:"gray", fontWeight:"300",marginLeft:"4%"}}>50% off | Use WELCOMEE60</Text>
           <MaterialCommunityIcons name="brightness-percent" size={13} color="darkorange" style={{top:"10%"}}></MaterialCommunityIcons>
           </View>
         </TouchableOpacity>
         </View>
+        </View>
 
-        <View style={{backgroundColor:"white", marginTop:11}}>
+
+        <View style={{backgroundColor:"white",marginTop:"3%"}}>
+<View style={{marginTop:"-24%"}}>
           <Image style={{height:20,width:20,top:"32%",left:16}} source={require('../assets/nonveg.png')}></Image>
            <Text style={{top:"27%",left:"14%",fontSize:14,color:"orange"}} > BEST SELLER</Text>
            <Text style={{top:"35.5%",left:22,}} >{'  '}150</Text>
@@ -172,14 +180,16 @@ const biriyani = () =>
           <TouchableOpacity>
           <Image style={{borderRadius:20,height:135,width:150, marginTop:10,marginBottom:20, marginLeft:110}}source={require('../assets/bfrbn.jpg')}></Image>
           </TouchableOpacity>
-          <View style={{marginLeft:"-29%",marginTop:"30%"}}>
+          <View style={{marginLeft:"-31%",marginTop:"32%",width:"25%"}}>
             <TouchableOpacity >
-              <Text style={{backgroundColor:"white",fontWeight:"bold",color:"green",borderColor:"gray",textAlign:"center",fontSize:30,paddingLeft:"2%",paddingRight:"2%",paddingTop:"1%",paddingBottom:"1%",borderWidth:1,borderRadius:10}}>ADD</Text>
+              <Text style={{backgroundColor:"white",fontWeight:"bold",color:"green",borderColor:"gray",
+              textAlign:"center",fontSize:20,paddingTop:"1%",paddingBottom:"1%",
+              borderWidth:1,borderRadius:10}}>ADD</Text>
             </TouchableOpacity>
-          </View>
+            </View>
        </View>
        
-       <Text style={{top:20,textAlign:"center",color:"lightgray"}}>....................................................................................................</Text>
+       <Text style={{top:5,textAlign:"center",color:"lightgray"}}>....................................................................................................</Text>
 
         <TouchableOpacity>
           <View style={{marginLeft:"4%",flexDirection:"row",paddingTop:"5%"}}> 
@@ -189,15 +199,17 @@ const biriyani = () =>
           </View>
           <View style={{paddingLeft:"4%",backgroundColor:"white",marginBottom:40}}>
           {/* addd black star and rupee icon'''''''''''' */}
-          <Text style={{color:"gray", fontWeight:"bold"}}>2.8   28 mins   rs 200 for two</Text>
+          <Text style={{color:"gray", fontWeight:"bold",top:"16%"}}>2.8   28 mins   rs 200 for two</Text>
           {/* add animated offer %  icon in orange color */}
           <Text style={{top:20,color:"gray", fontWeight:"300",marginLeft:"4%"}}>50% off | Use WELCOMEE60</Text>
           <MaterialCommunityIcons name="brightness-percent" size={13} color="darkorange" style={{top:"10%"}}></MaterialCommunityIcons>
           </View>
         </TouchableOpacity>
         </View>
+        </View>
 
-        <View style={{backgroundColor:"white", marginTop:11}}>
+       <View style={{backgroundColor:"white",marginTop:"3%"}}>
+<View style={{marginTop:"-24%"}}>
           <Image style={{height:20,width:20,top:"32%",left:16}} source={require('../assets/nonveg.png')}></Image>
            <Text style={{top:"27%",left:"14%",fontSize:14,color:"orange"}} > BEST SELLER</Text>
            <Text style={{top:"35.5%",left:22,}} >{'  '}150</Text>
@@ -212,14 +224,16 @@ const biriyani = () =>
           <TouchableOpacity>
           <Image style={{borderRadius:20,height:135,width:150, marginTop:10,marginBottom:20, marginLeft:110}}source={require('../assets/2hdrbrn.jpg')}></Image>
           </TouchableOpacity>
-          <View style={{marginLeft:"-29%",marginTop:"30%"}}>
+          <View style={{marginLeft:"-31%",marginTop:"32%",width:"25%"}}>
             <TouchableOpacity >
-              <Text style={{backgroundColor:"white",fontWeight:"bold",color:"green",borderColor:"gray",textAlign:"center",fontSize:30,paddingLeft:"2%",paddingRight:"2%",paddingTop:"1%",paddingBottom:"1%",borderWidth:1,borderRadius:10}}>ADD</Text>
+              <Text style={{backgroundColor:"white",fontWeight:"bold",color:"green",borderColor:"gray",
+              textAlign:"center",fontSize:20,paddingTop:"1%",paddingBottom:"1%",
+              borderWidth:1,borderRadius:10}}>ADD</Text>
             </TouchableOpacity>
-          </View>
+            </View>
        </View>
        
-       <Text style={{top:20,textAlign:"center",color:"lightgray"}}>....................................................................................................</Text>
+       <Text style={{top:5,textAlign:"center",color:"lightgray"}}>....................................................................................................</Text>
 
         <TouchableOpacity>
           <View style={{marginLeft:"4%",flexDirection:"row",paddingTop:"5%"}}> 
@@ -229,16 +243,17 @@ const biriyani = () =>
           </View>
           <View style={{paddingLeft:"4%",backgroundColor:"white",marginBottom:40}}>
           {/* addd black star and rupee icon'''''''''''' */}
-          <Text style={{color:"gray", fontWeight:"bold"}}>2.8   28 mins   rs 200 for two</Text>
+          <Text style={{color:"gray", fontWeight:"bold",top:"16%"}}>2.8   28 mins   rs 200 for two</Text>
           {/* add animated offer %  icon in orange color */}
           <Text style={{top:20,color:"gray", fontWeight:"300",marginLeft:"4%"}}>50% off | Use WELCOMEE60</Text>
           <MaterialCommunityIcons name="brightness-percent" size={13} color="darkorange" style={{top:"10%"}}></MaterialCommunityIcons>
           </View>
         </TouchableOpacity>
         </View>
-
+        </View>
          
-        <View style={{backgroundColor:"white", marginTop:11}}>
+        <View style={{backgroundColor:"white",marginTop:"3%"}}>
+<View style={{marginTop:"-24%"}}>
           <Image style={{height:20,width:20,top:"32%",left:16}} source={require('../assets/nonveg.png')}></Image>
            <Text style={{top:"27%",left:"14%",fontSize:14,color:"orange"}} > BEST SELLER</Text>
            <Text style={{top:"35.5%",left:22,}} >{'  '}150</Text>
@@ -253,14 +268,16 @@ const biriyani = () =>
           <TouchableOpacity>
           <Image style={{borderRadius:20,height:135,width:150, marginTop:10,marginBottom:20, marginLeft:110}}source={require('../assets/bfb1.jpg')}></Image>
           </TouchableOpacity>
-          <View style={{marginLeft:"-29%",marginTop:"30%"}}>
+          <View style={{marginLeft:"-31%",marginTop:"32%",width:"25%"}}>
             <TouchableOpacity >
-              <Text style={{backgroundColor:"white",fontWeight:"bold",color:"green",borderColor:"gray",textAlign:"center",fontSize:30,paddingLeft:"2%",paddingRight:"2%",paddingTop:"1%",paddingBottom:"1%",borderWidth:1,borderRadius:10}}>ADD</Text>
+              <Text style={{backgroundColor:"white",fontWeight:"bold",color:"green",borderColor:"gray",
+              textAlign:"center",fontSize:20,paddingTop:"1%",paddingBottom:"1%",
+              borderWidth:1,borderRadius:10}}>ADD</Text>
             </TouchableOpacity>
-          </View>
+            </View>
        </View>
 
-       <Text style={{top:20,textAlign:"center",color:"lightgray"}}>....................................................................................................</Text>
+       <Text style={{top:5,textAlign:"center",color:"lightgray"}}>....................................................................................................</Text>
 
         <TouchableOpacity>
           <View style={{marginLeft:"4%",flexDirection:"row",paddingTop:"5%"}}> 
@@ -270,12 +287,13 @@ const biriyani = () =>
           </View>
           <View style={{paddingLeft:"4%",backgroundColor:"white",marginBottom:40}}>
           {/* addd black star and rupee icon'''''''''''' */}
-          <Text style={{color:"gray", fontWeight:"bold"}}>2.8   28 mins   rs 200 for two</Text>
+          <Text style={{color:"gray", fontWeight:"bold",top:"16%"}}>2.8   28 mins   rs 200 for two</Text>
           {/* add animated offer %  icon in orange color */}
           <Text style={{top:20,color:"gray", fontWeight:"300",marginLeft:"4%"}}>50% off | Use WELCOMEE60</Text>
           <MaterialCommunityIcons name="brightness-percent" size={13} color="darkorange" style={{top:"10%"}}></MaterialCommunityIcons>
           </View>
         </TouchableOpacity>
+        </View>
         </View>
         </ScrollView>
      </ScrollView>
