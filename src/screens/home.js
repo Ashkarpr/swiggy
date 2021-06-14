@@ -15,7 +15,7 @@ const App = ({navigation}) => {
 
       <View style={{height:110,width:175,borderWidth:1,right:"28%",borderRadius:10,borderColor:"grey"}}>
       <TouchableOpacity
-       onPress={() => navigation.navigate('Account')}>
+       onPress={() => navigation.navigate('Search')}>
         <Text style={{fontWeight:"bold",left:"5%",fontSize:20,top:10}}>
         Restaurants
         </Text>
@@ -30,7 +30,7 @@ const App = ({navigation}) => {
     
       <View style={{height:110,width:175,borderWidth:1,left:"28%",borderRadius:10,borderColor:"grey",top:-110,marginBottom:-120}}>
       <TouchableOpacity
-       onPress={() => Alert.alert('Simple Button pressed')}>
+       onPress={() => {navigation.navigate('Search')}}>
         <Text style={{fontWeight:"bold",left:"5%",fontSize:20,top:10}}>
           Book Shop
         </Text>
@@ -63,8 +63,8 @@ const App = ({navigation}) => {
             <ScrollView  horizontal={true} style={{top:10,width:"110%"}}>  
 
             <View style={{height:110,width:175,borderWidth:1,right:"28%",borderRadius:10,borderColor:"grey",marginLeft:30,}}>
-        <TouchableOpacity
-       onPress={() => Alert.alert('Simple Button pressed')}>
+        <TouchableOpacity>
+       
         <Text style={{fontWeight:"bold",left:"5%",fontSize:20,top:10}}>
         Restaurants
         </Text>
@@ -77,8 +77,7 @@ const App = ({navigation}) => {
       </View> 
 
       <View style={{height:110,width:175,borderWidth:1,right:"28%",borderRadius:10,borderColor:"grey",marginLeft:10}}>
-      <TouchableOpacity
-       onPress={() => Alert.alert('Simple Button pressed')}>
+      <TouchableOpacity>
         <Text style={{fontWeight:"bold",left:"5%",fontSize:20,top:10}}>
         Restaurants
         </Text>
@@ -90,8 +89,8 @@ const App = ({navigation}) => {
           </TouchableOpacity>
       </View> 
       <View style={{height:110,width:175,borderWidth:1,right:"28%",borderRadius:10,borderColor:"grey",marginLeft:10}}>
-      <TouchableOpacity
-       onPress={() => Alert.alert('Simple Button pressed')}>
+      <TouchableOpacity>
+      
         <Text style={{fontWeight:"bold",left:"5%",fontSize:20,top:10}}>
         Restaurants
         </Text>
@@ -103,8 +102,8 @@ const App = ({navigation}) => {
           </TouchableOpacity>
       </View> 
       <View style={{height:110,width:175,borderWidth:1,right:"28%",borderRadius:10,borderColor:"grey",marginLeft:10}}>
-      <TouchableOpacity
-       onPress={() => Alert.alert('Simple Button pressed')}>
+      <TouchableOpacity>
+     
         <Text style={{fontWeight:"bold",left:"5%",fontSize:20,top:10}}>
         Restaurants
         </Text>
@@ -209,28 +208,40 @@ const App = ({navigation}) => {
        <Text style={{right:"25%",fontWeight:"bold",fontSize:20, marginTop:30, marginBottom:30}}>Popular Curations</Text>
         <ScrollView  horizontal={true} style={{top:10,width:"110%",height:180,marginTop:10,padding:10,}}>
           <View style={{}}>
+            <TouchableOpacity
+             onPress={() => {navigation.navigate('biriyani')}}>
             <Image
              style={{height:110,width:110,}}
              source={require('../assets/biryani12.png')}/>
              <Text style={{color:"grey",left:30,fontWeight:"bold"}}>Biryani</Text>
+             </TouchableOpacity>
              </View>
              <View>
+               <TouchableOpacity
+               onPress={()=>{navigation.navigate('pizza')}}>
             <Image
              style={{height:100,width:100,marginLeft:30}}
              source={require('../assets/pizza23.png')}/>
              <Text style={{color:"grey",left:"45%",fontWeight:"bold",top:10}}>Pizza</Text>
+             </TouchableOpacity>
              </View> 
              <View>
+             <TouchableOpacity
+               onPress={()=>{navigation.navigate('Cake')}}>
             <Image
              style={{height:100,width:100,marginLeft:30}}
              source={require('../assets/cake11.png')}/>
              <Text style={{color:"grey",left:"50%",fontWeight:"bold",top:10}}>Cake</Text>
+             </TouchableOpacity>
              </View> 
              <View>
+             <TouchableOpacity
+               onPress={()=>{navigation.navigate('North')}}>
             <Image
              style={{height:100,width:150,marginLeft:30}}
              source={require('../assets/kerala.png')}/>
              <Text  style={{color:"grey",left:"50%",fontWeight:"bold",top:8}}>South India</Text>
+             </TouchableOpacity>
              </View>
              <View>
             <Image

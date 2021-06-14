@@ -39,7 +39,7 @@ const account = ({navigation }) => {
                  
                  <Separator/>
                  <TouchableOpacity
-                 onPress={() => Alert.alert('Button with adjusted color pressed')}>
+                 onPress={() => {navigation.navigate('Search')}}>
                      <View style={{flexDirection:"row",width:"100%"}}>
                      <MaterialCommunityIcons name="ticket-percent-outline" size={20}
                       color="#4a4f51" style={{ }} /> 
@@ -50,7 +50,7 @@ const account = ({navigation }) => {
                  </TouchableOpacity>
                  <Separator/>
                  <TouchableOpacity
-                 onPress={() => Alert.alert('Button with adjusted color pressed')}>
+                 onPress={() => {navigation.navigate('Modal')}}>
                      <View style={{flexDirection:"row",marginBottom:-10}}>
                      <AntDesign name="mail" size={20}
                       color="#4a4f51" style={{ }} /> 
