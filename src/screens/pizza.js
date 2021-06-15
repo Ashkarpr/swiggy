@@ -21,13 +21,13 @@ const pizza = () =>
 
         {/* 1st MODAL ADDED............................................ */}
         <View>
-        <Modal  visible ={p1modal} animationType ="slide" style={styles.modalView}>
-          <View>
-          <Image style={{borderRadius:10,marginTop:"110%",height:"35%",width:"90%", alignSelf:"center"}}source={require('../assets/bbqp.jpg')}></Image>
+         <Modal transparent={true} visible ={p1modal} animationType ="slide" style={styles.modalView}>
+          <View style={{top:"60%",backgroundColor: 'white'}} >
+          <Image style={{borderRadius:10,marginTop:"3%",height:"50%",width:"90%", alignSelf:"center"}}source={require('../assets/bbqp.jpg')}></Image>
           <Image style={{height:20,width:20,top:"2.5%",left:"8%"}} source={require('../assets/nonveg.png')}></Image>
-           <Text style={{left:"17%",fontSize:14,color:"darkorange"}} > BEST SELLER</Text>
-           <Entypo name="star" size={20} color="darkorange" style={{top:"-3%",left:"13%"}}></Entypo>
-           <Text style={{fontWeight:"bold",left:"8%",top:"-2%"}}>Chicken Biriyani</Text>
+           <Text style={{left:"17%",fontSize:14,color:"darkorange",top:"-1.4%"}} > BEST SELLER</Text>
+           <Entypo name="star" size={20} color="darkorange" style={{top:"-6%",left:"13%"}}></Entypo>
+           <Text style={{fontWeight:"bold",left:"8%",top:"-5%"}}>Chicken Biriyani</Text>
            <Text style={{left:"9%",top:"-2%",}} >{'  '}150</Text>
            <FontAwesome name="rupee" size={15} color="gray" style={{top:"-4%",left:"8%"}}></FontAwesome>
            <TouchableOpacity style={{marginTop:"-25%"}}>
@@ -36,21 +36,22 @@ const pizza = () =>
              paddingBottom:"1%",color:"darkgreen"}}>ADD</Text>
            </TouchableOpacity>
           <Text  onPress ={()=> setp1modal (false)} 
-          style={{top:"4%",fontWeight:"bold",alignSelf:"center",width:"20%",textAlign:"center"}}>CLOSE IT</Text>
+          style={{top:"2%",fontWeight:"bold",alignSelf:"center",width:"20%",textAlign:"center"}}>CLOSE IT</Text>
           </View>
         </Modal>
         </View>
+        
 
         {/* 2nd modal........ */}
 
         <View>
-        <Modal  visible ={p2modal} animationType ="slide" style={styles.modalView}>
-          <View>
-          <Image style={{borderRadius:10,marginTop:"110%",height:"35%",width:"90%", alignSelf:"center"}}source={require('../assets/tp.jpg')}></Image>
+         <Modal transparent={true} visible ={p2modal} animationType ="slide" style={styles.modalView}>
+          <View style={{top:"60%",backgroundColor: 'white'}} >
+          <Image style={{borderRadius:10,marginTop:"3%",height:"50%",width:"90%", alignSelf:"center"}}source={require('../assets/tp.jpg')}></Image>
           <Image style={{height:20,width:20,top:"2.5%",left:"8%"}} source={require('../assets/nonveg.png')}></Image>
-           <Text style={{left:"17%",fontSize:14,color:"darkorange"}} > BEST SELLER</Text>
-           <Entypo name="star" size={20} color="darkorange" style={{top:"-3%",left:"13%"}}></Entypo>
-           <Text style={{fontWeight:"bold",left:"8%",top:"-2%"}}>Chicken Biriyani</Text>
+           <Text style={{left:"17%",fontSize:14,color:"darkorange",top:"-1.4%"}} > BEST SELLER</Text>
+           <Entypo name="star" size={20} color="darkorange" style={{top:"-6%",left:"13%"}}></Entypo>
+           <Text style={{fontWeight:"bold",left:"8%",top:"-5%"}}>Chicken Biriyani</Text>
            <Text style={{left:"9%",top:"-2%",}} >{'  '}150</Text>
            <FontAwesome name="rupee" size={15} color="gray" style={{top:"-4%",left:"8%"}}></FontAwesome>
            <TouchableOpacity style={{marginTop:"-25%"}}>
@@ -59,20 +60,21 @@ const pizza = () =>
              paddingBottom:"1%",color:"darkgreen"}}>ADD</Text>
            </TouchableOpacity>
           <Text  onPress ={()=> setp2modal (false)} 
-          style={{top:"4%",fontWeight:"bold",alignSelf:"center",width:"20%",textAlign:"center"}}>CLOSE IT</Text>
+          style={{top:"2%",fontWeight:"bold",alignSelf:"center",width:"20%",textAlign:"center"}}>CLOSE IT</Text>
           </View>
         </Modal>
         </View>
+        
 
         {/* 3rd modal.... */}
         <View>
-        <Modal  visible ={p3modal} animationType ="slide" style={styles.modalView}>
-          <View>
-          <Image style={{borderRadius:10,marginTop:"110%",height:"35%",width:"90%", alignSelf:"center"}}source={require('../assets/beefp.jpg')}></Image>
+         <Modal transparent={true} visible ={p3modal} animationType ="slide" style={styles.modalView}>
+          <View style={{top:"60%",backgroundColor: 'white'}} >
+          <Image style={{borderRadius:10,marginTop:"3%",height:"50%",width:"90%", alignSelf:"center"}}source={require('../assets/beefp.jpg')}></Image>
           <Image style={{height:20,width:20,top:"2.5%",left:"8%"}} source={require('../assets/nonveg.png')}></Image>
-           <Text style={{left:"17%",fontSize:14,color:"darkorange"}} > BEST SELLER</Text>
-           <Entypo name="star" size={20} color="darkorange" style={{top:"-3%",left:"13%"}}></Entypo>
-           <Text style={{fontWeight:"bold",left:"8%",top:"-2%"}}>Chicken Biriyani</Text>
+           <Text style={{left:"17%",fontSize:14,color:"darkorange",top:"-1.4%"}} > BEST SELLER</Text>
+           <Entypo name="star" size={20} color="darkorange" style={{top:"-6%",left:"13%"}}></Entypo>
+           <Text style={{fontWeight:"bold",left:"8%",top:"-5%"}}>Chicken Biriyani</Text>
            <Text style={{left:"9%",top:"-2%",}} >{'  '}150</Text>
            <FontAwesome name="rupee" size={15} color="gray" style={{top:"-4%",left:"8%"}}></FontAwesome>
            <TouchableOpacity style={{marginTop:"-25%"}}>
@@ -81,20 +83,21 @@ const pizza = () =>
              paddingBottom:"1%",color:"darkgreen"}}>ADD</Text>
            </TouchableOpacity>
           <Text  onPress ={()=> setp3modal (false)} 
-          style={{top:"4%",fontWeight:"bold",alignSelf:"center",width:"20%",textAlign:"center"}}>CLOSE IT</Text>
+          style={{top:"2%",fontWeight:"bold",alignSelf:"center",width:"20%",textAlign:"center"}}>CLOSE IT</Text>
           </View>
         </Modal>
         </View>
+        
 
          {/* 4th modal.... */}
          <View>
-        <Modal  visible ={p4modal} animationType ="slide" style={styles.modalView}>
-          <View>
-          <Image style={{borderRadius:10,marginTop:"110%",height:"35%",width:"90%", alignSelf:"center"}}source={require('../assets/pizza.jpg')}></Image>
+         <Modal transparent={true} visible ={p4modal} animationType ="slide" style={styles.modalView}>
+          <View style={{top:"60%",backgroundColor: 'white'}} >
+          <Image style={{borderRadius:10,marginTop:"3%",height:"50%",width:"90%", alignSelf:"center"}}source={require('../assets/pizza.jpg')}></Image>
           <Image style={{height:20,width:20,top:"2.5%",left:"8%"}} source={require('../assets/nonveg.png')}></Image>
-           <Text style={{left:"17%",fontSize:14,color:"darkorange"}} > BEST SELLER</Text>
-           <Entypo name="star" size={20} color="darkorange" style={{top:"-3%",left:"13%"}}></Entypo>
-           <Text style={{fontWeight:"bold",left:"8%",top:"-2%"}}>Chicken Biriyani</Text>
+           <Text style={{left:"17%",fontSize:14,color:"darkorange",top:"-1.4%"}} > BEST SELLER</Text>
+           <Entypo name="star" size={20} color="darkorange" style={{top:"-6%",left:"13%"}}></Entypo>
+           <Text style={{fontWeight:"bold",left:"8%",top:"-5%"}}>Chicken Biriyani</Text>
            <Text style={{left:"9%",top:"-2%",}} >{'  '}150</Text>
            <FontAwesome name="rupee" size={15} color="gray" style={{top:"-4%",left:"8%"}}></FontAwesome>
            <TouchableOpacity style={{marginTop:"-25%"}}>
@@ -103,20 +106,20 @@ const pizza = () =>
              paddingBottom:"1%",color:"darkgreen"}}>ADD</Text>
            </TouchableOpacity>
           <Text  onPress ={()=> setp4modal (false)} 
-          style={{top:"4%",fontWeight:"bold",alignSelf:"center",width:"20%",textAlign:"center"}}>CLOSE IT</Text>
+          style={{top:"2%",fontWeight:"bold",alignSelf:"center",width:"20%",textAlign:"center"}}>CLOSE IT</Text>
           </View>
         </Modal>
         </View>
-
+        
          {/* 5th modal.... */}
          <View>
-        <Modal  visible ={p5modal} animationType ="slide" style={styles.modalView}>
-          <View>
-          <Image style={{borderRadius:10,marginTop:"110%",height:"35%",width:"90%", alignSelf:"center"}}source={require('../assets/bbqp.jpg')}></Image>
+         <Modal transparent={true} visible ={p5modal} animationType ="slide" style={styles.modalView}>
+          <View style={{top:"60%",backgroundColor: 'white'}} >
+          <Image style={{borderRadius:10,marginTop:"3%",height:"50%",width:"90%", alignSelf:"center"}}source={require('../assets/bbqp.jpg')}></Image>
           <Image style={{height:20,width:20,top:"2.5%",left:"8%"}} source={require('../assets/nonveg.png')}></Image>
-           <Text style={{left:"17%",fontSize:14,color:"darkorange"}} > BEST SELLER</Text>
-           <Entypo name="star" size={20} color="darkorange" style={{top:"-3%",left:"13%"}}></Entypo>
-           <Text style={{fontWeight:"bold",left:"8%",top:"-2%"}}>Chicken Biriyani</Text>
+           <Text style={{left:"17%",fontSize:14,color:"darkorange",top:"-1.4%"}} > BEST SELLER</Text>
+           <Entypo name="star" size={20} color="darkorange" style={{top:"-6%",left:"13%"}}></Entypo>
+           <Text style={{fontWeight:"bold",left:"8%",top:"-5%"}}>Chicken Biriyani</Text>
            <Text style={{left:"9%",top:"-2%",}} >{'  '}150</Text>
            <FontAwesome name="rupee" size={15} color="gray" style={{top:"-4%",left:"8%"}}></FontAwesome>
            <TouchableOpacity style={{marginTop:"-25%"}}>
@@ -125,10 +128,11 @@ const pizza = () =>
              paddingBottom:"1%",color:"darkgreen"}}>ADD</Text>
            </TouchableOpacity>
           <Text  onPress ={()=> setp5modal (false)} 
-          style={{top:"4%",fontWeight:"bold",alignSelf:"center",width:"20%",textAlign:"center"}}>CLOSE IT</Text>
+          style={{top:"2%",fontWeight:"bold",alignSelf:"center",width:"20%",textAlign:"center"}}>CLOSE IT</Text>
           </View>
         </Modal>
         </View>
+        
 
        <View style={{backgroundColor:"white",}}>
         <TextInput style={styles.search}

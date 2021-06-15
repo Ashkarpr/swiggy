@@ -17,14 +17,14 @@ const biriyani = () =>
         
       <View style={{backgroundColor:"#f7f2f2",}}>
         {/* 1st MODAL ADDED............................................ */}
-        <View>
-        <Modal  visible ={firstbiriyanimodal} animationType ="slide" style={styles.modalView}>
-          <View>
-          <Image style={{borderRadius:10,marginTop:"110%",height:"35%",width:"90%", alignSelf:"center"}}source={require('../assets/1cknbiriyani.jpg')}></Image>
+        <View >
+        <Modal transparent={true} visible ={firstbiriyanimodal} animationType ="slide" style={styles.modalView}>
+          <View style={{top:"60%",backgroundColor: 'white'}} >
+          <Image style={{borderRadius:10,marginTop:"3%",height:"50%",width:"90%", alignSelf:"center"}}source={require('../assets/1cknbiriyani.jpg')}></Image>
           <Image style={{height:20,width:20,top:"2.5%",left:"8%"}} source={require('../assets/nonveg.png')}></Image>
-           <Text style={{left:"17%",fontSize:14,color:"darkorange"}} > BEST SELLER</Text>
-           <Entypo name="star" size={20} color="darkorange" style={{top:"-3%",left:"13%"}}></Entypo>
-           <Text style={{fontWeight:"bold",left:"8%",top:"-2%"}}>Chicken Biriyani</Text>
+           <Text style={{left:"17%",fontSize:14,color:"darkorange",top:"-1.4%"}} > BEST SELLER</Text>
+           <Entypo name="star" size={20} color="darkorange" style={{top:"-6%",left:"13%"}}></Entypo>
+           <Text style={{fontWeight:"bold",left:"8%",top:"-5%"}}>Chicken Biriyani</Text>
            <Text style={{left:"9%",top:"-2%",}} >{'  '}150</Text>
            <FontAwesome name="rupee" size={15} color="gray" style={{top:"-4%",left:"8%"}}></FontAwesome>
            <TouchableOpacity style={{marginTop:"-25%"}}>
@@ -33,7 +33,7 @@ const biriyani = () =>
              paddingBottom:"1%",color:"darkgreen"}}>ADD</Text>
            </TouchableOpacity>
           <Text  onPress ={()=> setfirstbiriyanimodal (false)} 
-          style={{top:"4%",fontWeight:"bold",alignSelf:"center",width:"20%",textAlign:"center"}}>CLOSE IT</Text>
+          style={{top:"2%",fontWeight:"bold",alignSelf:"center",width:"20%",textAlign:"center"}}>CLOSE IT</Text>
           </View>
         </Modal>
         </View>
@@ -41,13 +41,13 @@ const biriyani = () =>
         {/* 2nd modal........ */}
 
         <View>
-        <Modal  visible ={secondtbiriyanimodal} animationType ="slide" style={styles.modalView}>
-          <View>
-          <Image style={{borderRadius:10,marginTop:"110%",height:"35%",width:"90%", alignSelf:"center"}}source={require('../assets/3hdrcknbrn.jpg')}></Image>
+        <Modal transparent={true} visible ={secondtbiriyanimodal} animationType ="slide" style={styles.modalView}>
+          <View style={{top:"60%",backgroundColor: 'white'}} >
+          <Image style={{borderRadius:10,marginTop:"3%",height:"50%",width:"90%", alignSelf:"center"}}source={require('../assets/3hdrcknbrn.jpg')}></Image>
           <Image style={{height:20,width:20,top:"2.5%",left:"8%"}} source={require('../assets/nonveg.png')}></Image>
-           <Text style={{left:"17%",fontSize:14,color:"darkorange"}} > BEST SELLER</Text>
-           <Entypo name="star" size={20} color="darkorange" style={{top:"-3%",left:"13%"}}></Entypo>
-           <Text style={{fontWeight:"bold",left:"8%",top:"-2%"}}>Chicken Biriyani</Text>
+           <Text style={{left:"17%",fontSize:14,color:"darkorange",top:"-1.4%"}} > BEST SELLER</Text>
+           <Entypo name="star" size={20} color="darkorange" style={{top:"-6%",left:"13%"}}></Entypo>
+           <Text style={{fontWeight:"bold",left:"8%",top:"-5%"}}>Chicken Biriyani</Text>
            <Text style={{left:"9%",top:"-2%",}} >{'  '}150</Text>
            <FontAwesome name="rupee" size={15} color="gray" style={{top:"-4%",left:"8%"}}></FontAwesome>
            <TouchableOpacity style={{marginTop:"-25%"}}>
@@ -56,20 +56,20 @@ const biriyani = () =>
              paddingBottom:"1%",color:"darkgreen"}}>ADD</Text>
            </TouchableOpacity>
           <Text  onPress ={()=> setsecondbiriyanimodal (false)} 
-          style={{top:"4%",fontWeight:"bold",alignSelf:"center",width:"20%",textAlign:"center"}}>CLOSE IT</Text>
+          style={{top:"2%",fontWeight:"bold",alignSelf:"center",width:"20%",textAlign:"center"}}>CLOSE IT</Text>
           </View>
         </Modal>
         </View>
 
         {/* 3rd modal.... */}
         <View>
-        <Modal  visible ={thirdtbiriyanimodal} animationType ="slide" style={styles.modalView}>
-          <View>
-          <Image style={{borderRadius:10,marginTop:"110%",height:"35%",width:"90%", alignSelf:"center"}}source={require('../assets/bfrbn.jpg')}></Image>
+        <Modal transparent={true} visible ={thirdtbiriyanimodal} animationType ="slide" style={styles.modalView}>
+          <View style={{top:"60%",backgroundColor: 'white'}} >
+          <Image style={{borderRadius:10,marginTop:"3%",height:"50%",width:"90%", alignSelf:"center"}}source={require('../assets/bfrbn.jpg')}></Image>
           <Image style={{height:20,width:20,top:"2.5%",left:"8%"}} source={require('../assets/nonveg.png')}></Image>
-           <Text style={{left:"17%",fontSize:14,color:"darkorange"}} > BEST SELLER</Text>
-           <Entypo name="star" size={20} color="darkorange" style={{top:"-3%",left:"13%"}}></Entypo>
-           <Text style={{fontWeight:"bold",left:"8%",top:"-2%"}}>Chicken Biriyani</Text>
+           <Text style={{left:"17%",fontSize:14,color:"darkorange",top:"-1.4%"}} > BEST SELLER</Text>
+           <Entypo name="star" size={20} color="darkorange" style={{top:"-6%",left:"13%"}}></Entypo>
+           <Text style={{fontWeight:"bold",left:"8%",top:"-5%"}}>Chicken Biriyani</Text>
            <Text style={{left:"9%",top:"-2%",}} >{'  '}150</Text>
            <FontAwesome name="rupee" size={15} color="gray" style={{top:"-4%",left:"8%"}}></FontAwesome>
            <TouchableOpacity style={{marginTop:"-25%"}}>
@@ -78,20 +78,19 @@ const biriyani = () =>
              paddingBottom:"1%",color:"darkgreen"}}>ADD</Text>
            </TouchableOpacity>
           <Text  onPress ={()=> setthirdbiriyanimodal (false)} 
-          style={{top:"4%",fontWeight:"bold",alignSelf:"center",width:"20%",textAlign:"center"}}>CLOSE IT</Text>
+          style={{top:"2%",fontWeight:"bold",alignSelf:"center",width:"20%",textAlign:"center"}}>CLOSE IT</Text>
           </View>
         </Modal>
-        </View>
-
+          </View>
          {/* 4th modal.... */}
          <View>
-        <Modal  visible ={fourthbiriyanimodal} animationType ="slide" style={styles.modalView}>
-          <View>
-          <Image style={{borderRadius:10,marginTop:"110%",height:"35%",width:"90%", alignSelf:"center"}}source={require('../assets/2hdrbrn.jpg')}></Image>
+         <Modal transparent={true} visible ={fourthbiriyanimodal} animationType ="slide" style={styles.modalView}>
+          <View style={{top:"60%",backgroundColor: 'white'}} >
+          <Image style={{borderRadius:10,marginTop:"3%",height:"50%",width:"90%", alignSelf:"center"}}source={require('../assets/2hdrbrn.jpg')}></Image>
           <Image style={{height:20,width:20,top:"2.5%",left:"8%"}} source={require('../assets/nonveg.png')}></Image>
-           <Text style={{left:"17%",fontSize:14,color:"darkorange"}} > BEST SELLER</Text>
-           <Entypo name="star" size={20} color="darkorange" style={{top:"-3%",left:"13%"}}></Entypo>
-           <Text style={{fontWeight:"bold",left:"8%",top:"-2%"}}>Chicken Biriyani</Text>
+           <Text style={{left:"17%",fontSize:14,color:"darkorange",top:"-1.4%"}} > BEST SELLER</Text>
+           <Entypo name="star" size={20} color="darkorange" style={{top:"-6%",left:"13%"}}></Entypo>
+           <Text style={{fontWeight:"bold",left:"8%",top:"-5%"}}>Chicken Biriyani</Text>
            <Text style={{left:"9%",top:"-2%",}} >{'  '}150</Text>
            <FontAwesome name="rupee" size={15} color="gray" style={{top:"-4%",left:"8%"}}></FontAwesome>
            <TouchableOpacity style={{marginTop:"-25%"}}>
@@ -100,20 +99,20 @@ const biriyani = () =>
              paddingBottom:"1%",color:"darkgreen"}}>ADD</Text>
            </TouchableOpacity>
           <Text  onPress ={()=> setfourthbiriyanimodal (false)} 
-          style={{top:"4%",fontWeight:"bold",alignSelf:"center",width:"20%",textAlign:"center"}}>CLOSE IT</Text>
+          style={{top:"2%",fontWeight:"bold",alignSelf:"center",width:"20%",textAlign:"center"}}>CLOSE IT</Text>
           </View>
         </Modal>
         </View>
 
          {/* 5th modal.... */}
          <View>
-        <Modal  visible ={fifthbiriyanimodal} animationType ="slide" style={styles.modalView}>
-          <View>
-          <Image style={{borderRadius:10,marginTop:"110%",height:"35%",width:"90%", alignSelf:"center"}}source={require('../assets/bfb1.jpg')}></Image>
+         <Modal transparent={true} visible ={fifthbiriyanimodal} animationType ="slide" style={styles.modalView}>
+          <View style={{top:"60%",backgroundColor: 'white'}} >
+          <Image style={{borderRadius:10,marginTop:"3%",height:"50%",width:"90%", alignSelf:"center"}}source={require('../assets/bfb1.jpg')}></Image>
           <Image style={{height:20,width:20,top:"2.5%",left:"8%"}} source={require('../assets/nonveg.png')}></Image>
-           <Text style={{left:"17%",fontSize:14,color:"darkorange"}} > BEST SELLER</Text>
-           <Entypo name="star" size={20} color="darkorange" style={{top:"-3%",left:"13%"}}></Entypo>
-           <Text style={{fontWeight:"bold",left:"8%",top:"-2%"}}>Chicken Biriyani</Text>
+           <Text style={{left:"17%",fontSize:14,color:"darkorange",top:"-1.4%"}} > BEST SELLER</Text>
+           <Entypo name="star" size={20} color="darkorange" style={{top:"-6%",left:"13%"}}></Entypo>
+           <Text style={{fontWeight:"bold",left:"8%",top:"-5%"}}>Chicken Biriyani</Text>
            <Text style={{left:"9%",top:"-2%",}} >{'  '}150</Text>
            <FontAwesome name="rupee" size={15} color="gray" style={{top:"-4%",left:"8%"}}></FontAwesome>
            <TouchableOpacity style={{marginTop:"-25%"}}>
@@ -122,7 +121,7 @@ const biriyani = () =>
              paddingBottom:"1%",color:"darkgreen"}}>ADD</Text>
            </TouchableOpacity>
           <Text  onPress ={()=> setfifthbiriyanimodal (false)} 
-          style={{top:"4%",fontWeight:"bold",alignSelf:"center",width:"20%",textAlign:"center"}}>CLOSE IT</Text>
+          style={{top:"2%",fontWeight:"bold",alignSelf:"center",width:"20%",textAlign:"center"}}>CLOSE IT</Text>
           </View>
         </Modal>
         </View>
