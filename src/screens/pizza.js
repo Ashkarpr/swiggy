@@ -1,5 +1,5 @@
-import React from "react";
-import { View,Text, TextInput,StyleSheet,Image,TouchableOpacity, ScrollView,Button} from "react-native";
+import React, {useState} from "react";
+import { View,Text, TextInput,StyleSheet,Image,TouchableOpacity, ScrollView,Modal,Button} from "react-native";
 import Entypo from 'react-native-vector-icons/Entypo';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -8,9 +8,128 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 const pizza = () =>
 {
+
+  const [p1modal, setp1modal] = useState(false)
+  const [p2modal, setp2modal] = useState(false)
+  const [p3modal, setp3modal] = useState(false)
+  const [p4modal, setp4modal] = useState(false)
+  const [p5modal, setp5modal] = useState(false)
+
     return (
         
       <View style={{backgroundColor:"#f7f2f2",}}>
+
+        {/* 1st MODAL ADDED............................................ */}
+        <View>
+        <Modal  visible ={p1modal} animationType ="slide" style={styles.modalView}>
+          <View>
+          <Image style={{borderRadius:10,marginTop:"110%",height:"35%",width:"90%", alignSelf:"center"}}source={require('../assets/bbqp.jpg')}></Image>
+          <Image style={{height:20,width:20,top:"2.5%",left:"8%"}} source={require('../assets/nonveg.png')}></Image>
+           <Text style={{left:"17%",fontSize:14,color:"darkorange"}} > BEST SELLER</Text>
+           <Entypo name="star" size={20} color="darkorange" style={{top:"-3%",left:"13%"}}></Entypo>
+           <Text style={{fontWeight:"bold",left:"8%",top:"-2%"}}>Chicken Biriyani</Text>
+           <Text style={{left:"9%",top:"-2%",}} >{'  '}150</Text>
+           <FontAwesome name="rupee" size={15} color="gray" style={{top:"-4%",left:"8%"}}></FontAwesome>
+           <TouchableOpacity style={{marginTop:"-25%"}}>
+             <Text style={{fontWeight:"bold",left:"70%",borderWidth:.3,borderColor:"gray"
+             ,backgroundColor:"white",textAlign:"center",width:"23%",paddingTop:"1%",borderRadius:4,
+             paddingBottom:"1%",color:"darkgreen"}}>ADD</Text>
+           </TouchableOpacity>
+          <Text  onPress ={()=> setp1modal (false)} 
+          style={{top:"4%",fontWeight:"bold",alignSelf:"center",width:"20%",textAlign:"center"}}>CLOSE IT</Text>
+          </View>
+        </Modal>
+        </View>
+
+        {/* 2nd modal........ */}
+
+        <View>
+        <Modal  visible ={p2modal} animationType ="slide" style={styles.modalView}>
+          <View>
+          <Image style={{borderRadius:10,marginTop:"110%",height:"35%",width:"90%", alignSelf:"center"}}source={require('../assets/tp.jpg')}></Image>
+          <Image style={{height:20,width:20,top:"2.5%",left:"8%"}} source={require('../assets/nonveg.png')}></Image>
+           <Text style={{left:"17%",fontSize:14,color:"darkorange"}} > BEST SELLER</Text>
+           <Entypo name="star" size={20} color="darkorange" style={{top:"-3%",left:"13%"}}></Entypo>
+           <Text style={{fontWeight:"bold",left:"8%",top:"-2%"}}>Chicken Biriyani</Text>
+           <Text style={{left:"9%",top:"-2%",}} >{'  '}150</Text>
+           <FontAwesome name="rupee" size={15} color="gray" style={{top:"-4%",left:"8%"}}></FontAwesome>
+           <TouchableOpacity style={{marginTop:"-25%"}}>
+             <Text style={{fontWeight:"bold",left:"70%",borderWidth:.3,borderColor:"gray"
+             ,backgroundColor:"white",textAlign:"center",width:"23%",paddingTop:"1%",borderRadius:4,
+             paddingBottom:"1%",color:"darkgreen"}}>ADD</Text>
+           </TouchableOpacity>
+          <Text  onPress ={()=> setp2modal (false)} 
+          style={{top:"4%",fontWeight:"bold",alignSelf:"center",width:"20%",textAlign:"center"}}>CLOSE IT</Text>
+          </View>
+        </Modal>
+        </View>
+
+        {/* 3rd modal.... */}
+        <View>
+        <Modal  visible ={p3modal} animationType ="slide" style={styles.modalView}>
+          <View>
+          <Image style={{borderRadius:10,marginTop:"110%",height:"35%",width:"90%", alignSelf:"center"}}source={require('../assets/beefp.jpg')}></Image>
+          <Image style={{height:20,width:20,top:"2.5%",left:"8%"}} source={require('../assets/nonveg.png')}></Image>
+           <Text style={{left:"17%",fontSize:14,color:"darkorange"}} > BEST SELLER</Text>
+           <Entypo name="star" size={20} color="darkorange" style={{top:"-3%",left:"13%"}}></Entypo>
+           <Text style={{fontWeight:"bold",left:"8%",top:"-2%"}}>Chicken Biriyani</Text>
+           <Text style={{left:"9%",top:"-2%",}} >{'  '}150</Text>
+           <FontAwesome name="rupee" size={15} color="gray" style={{top:"-4%",left:"8%"}}></FontAwesome>
+           <TouchableOpacity style={{marginTop:"-25%"}}>
+             <Text style={{fontWeight:"bold",left:"70%",borderWidth:.3,borderColor:"gray"
+             ,backgroundColor:"white",textAlign:"center",width:"23%",paddingTop:"1%",borderRadius:4,
+             paddingBottom:"1%",color:"darkgreen"}}>ADD</Text>
+           </TouchableOpacity>
+          <Text  onPress ={()=> setp3modal (false)} 
+          style={{top:"4%",fontWeight:"bold",alignSelf:"center",width:"20%",textAlign:"center"}}>CLOSE IT</Text>
+          </View>
+        </Modal>
+        </View>
+
+         {/* 4th modal.... */}
+         <View>
+        <Modal  visible ={p4modal} animationType ="slide" style={styles.modalView}>
+          <View>
+          <Image style={{borderRadius:10,marginTop:"110%",height:"35%",width:"90%", alignSelf:"center"}}source={require('../assets/pizza.jpg')}></Image>
+          <Image style={{height:20,width:20,top:"2.5%",left:"8%"}} source={require('../assets/nonveg.png')}></Image>
+           <Text style={{left:"17%",fontSize:14,color:"darkorange"}} > BEST SELLER</Text>
+           <Entypo name="star" size={20} color="darkorange" style={{top:"-3%",left:"13%"}}></Entypo>
+           <Text style={{fontWeight:"bold",left:"8%",top:"-2%"}}>Chicken Biriyani</Text>
+           <Text style={{left:"9%",top:"-2%",}} >{'  '}150</Text>
+           <FontAwesome name="rupee" size={15} color="gray" style={{top:"-4%",left:"8%"}}></FontAwesome>
+           <TouchableOpacity style={{marginTop:"-25%"}}>
+             <Text style={{fontWeight:"bold",left:"70%",borderWidth:.3,borderColor:"gray"
+             ,backgroundColor:"white",textAlign:"center",width:"23%",paddingTop:"1%",borderRadius:4,
+             paddingBottom:"1%",color:"darkgreen"}}>ADD</Text>
+           </TouchableOpacity>
+          <Text  onPress ={()=> setp4modal (false)} 
+          style={{top:"4%",fontWeight:"bold",alignSelf:"center",width:"20%",textAlign:"center"}}>CLOSE IT</Text>
+          </View>
+        </Modal>
+        </View>
+
+         {/* 5th modal.... */}
+         <View>
+        <Modal  visible ={p5modal} animationType ="slide" style={styles.modalView}>
+          <View>
+          <Image style={{borderRadius:10,marginTop:"110%",height:"35%",width:"90%", alignSelf:"center"}}source={require('../assets/bbqp.jpg')}></Image>
+          <Image style={{height:20,width:20,top:"2.5%",left:"8%"}} source={require('../assets/nonveg.png')}></Image>
+           <Text style={{left:"17%",fontSize:14,color:"darkorange"}} > BEST SELLER</Text>
+           <Entypo name="star" size={20} color="darkorange" style={{top:"-3%",left:"13%"}}></Entypo>
+           <Text style={{fontWeight:"bold",left:"8%",top:"-2%"}}>Chicken Biriyani</Text>
+           <Text style={{left:"9%",top:"-2%",}} >{'  '}150</Text>
+           <FontAwesome name="rupee" size={15} color="gray" style={{top:"-4%",left:"8%"}}></FontAwesome>
+           <TouchableOpacity style={{marginTop:"-25%"}}>
+             <Text style={{fontWeight:"bold",left:"70%",borderWidth:.3,borderColor:"gray"
+             ,backgroundColor:"white",textAlign:"center",width:"23%",paddingTop:"1%",borderRadius:4,
+             paddingBottom:"1%",color:"darkgreen"}}>ADD</Text>
+           </TouchableOpacity>
+          <Text  onPress ={()=> setp5modal (false)} 
+          style={{top:"4%",fontWeight:"bold",alignSelf:"center",width:"20%",textAlign:"center"}}>CLOSE IT</Text>
+          </View>
+        </Modal>
+        </View>
+
        <View style={{backgroundColor:"white",}}>
         <TextInput style={styles.search}
           placeholder="   Search for restaurents and food">
@@ -89,7 +208,7 @@ const pizza = () =>
           <Text style={{left:18,alignSelf:"center",fontWeight:"bold", fontSize:15,fontStyle:"normal",paddingTop:8}}>
             Mushroom Pizza{'\n'}
           </Text>
-          <TouchableOpacity>
+          <TouchableOpacity onPress ={()=> setp1modal (true)}>
           <Image style={{borderRadius:20,height:135,width:150, marginTop:10,marginBottom:20, marginLeft:110}}source={require('../assets/bbqp.jpg')}></Image>
           </TouchableOpacity>
           <View style={{marginLeft:"-31%",marginTop:"32%",width:"25%"}}>
@@ -131,7 +250,7 @@ const pizza = () =>
           <Text style={{left:19,alignSelf:"center",fontWeight:"bold", fontSize:15,fontStyle:"normal",paddingTop:8}}>
             7" Barbecue Chicken Pizza{'\n'}
           </Text>
-          <TouchableOpacity>
+          <TouchableOpacity onPress ={()=> setp2modal (true)}>
           <Image style={{borderRadius:20,height:130,width:150, marginTop:10,marginBottom:20, marginLeft:40}}source={require('../assets/tp.jpg')}></Image>
           </TouchableOpacity>
           <View style={{marginLeft:"-31%",marginTop:"32%",width:"25%"}}>
@@ -173,7 +292,7 @@ const pizza = () =>
           <Text style={{left:19,alignSelf:"center",fontWeight:"bold", fontSize:15,fontStyle:"normal",paddingTop:8}}>
             7" Barbecue Chicken Pizza{'\n'}
           </Text>
-          <TouchableOpacity>
+          <TouchableOpacity onPress ={()=> setp3modal (true)}>
           <Image style={{borderRadius:20,height:130,width:150, marginTop:10,marginBottom:20, marginLeft:40}}source={require('../assets/beefp.jpg')}></Image>
           </TouchableOpacity>
           <View style={{marginLeft:"-31%",marginTop:"32%",width:"25%"}}>
@@ -215,7 +334,7 @@ const pizza = () =>
           <Text style={{left:19,alignSelf:"center",fontWeight:"bold", fontSize:15,fontStyle:"normal",paddingTop:8}}>
             Beef Mushroom Pizza{'\n'}
           </Text>
-          <TouchableOpacity>
+          <TouchableOpacity onPress ={()=> setp4modal (true)}>
           <Image style={{borderRadius:20,height:130,width:150, marginTop:10,marginBottom:20, marginLeft:70}}source={require('../assets/pizza.jpg')}></Image>
           </TouchableOpacity>
           <View style={{marginLeft:"-31%",marginTop:"32%",width:"25%"}}>
@@ -257,7 +376,7 @@ const pizza = () =>
           <Text style={{left:19,alignSelf:"center",fontWeight:"bold", fontSize:15,fontStyle:"normal",paddingTop:8}}>
             7" Barbecue Chicken Pizza{'\n'}
           </Text>
-          <TouchableOpacity>
+          <TouchableOpacity onPress ={()=> setp5modal (true)}>
           <Image style={{borderRadius:20,height:130,width:150, marginTop:10,marginBottom:20, marginLeft:40}}source={require('../assets/bbqp.jpg')}></Image>
           </TouchableOpacity>
           <View style={{marginLeft:"-31%",marginTop:"32%",width:"25%"}}>
