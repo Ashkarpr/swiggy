@@ -20,32 +20,41 @@ const modalView = ({navigation}) => {
       >
         <View style={styles.centeredView}>
           <View style={styles.modalView}>
+            <View style={{flexDirection:"row",marginBottom:"10%"}}>
           
-              <Text style={{fontSize:20,fontWeight:"bold",right:"40%",marginBottom:10,color:"#022f45"}}>Login</Text>
-              <Text style={{fontSize:20,right:"28%",color:"gray",top:-37}}>or</Text>
-              <Text style={{fontSize:20,fontWeight:"bold",right:"15%",top:-63,color:"#022f45",marginBottom:-20}}>Signup</Text>
+              <Text style={{fontSize:20,fontWeight:"bold",marginBottom:10,color:"#022f45",marginRight:"1%"}}>Login</Text>
+              <Text style={{fontSize:20,color:"gray",marginRight:"1%"}}>or</Text>
+              <Text style={{fontSize:20,fontWeight:"bold",color:"#022f45",marginBottom:-20}}>Signup</Text>
+              </View>
               <TextInput
-              style={{borderWidth:1,borderColor:"gray", width:"100%",height:40,borderRadius:10,marginBottom:10}}
+              style={{borderWidth:1,borderColor:"gray", width:"100%",height:40,borderRadius:10,marginBottom:"5%"}}
              placeholder="  +91 |   Enter phone number*"
             
               keyboardType="numeric"
              maxLength={10}
                 />
-                <Text style={{right:"22%",color:"gray"}}>By continuing, I agree to the </Text>
-                <Text style={{color:colors.home,left:"18%",top:-20,fontWeight:"bold"}}>Terms of use  </Text>
-                <Text style={{color:colors.home,left:"32%",top:-39}}>& </Text>
-                <Text style={{color:colors.home,left:"40%",top:-58,fontWeight:"bold"}}> Privacy</Text>
-                <Text style={{color:colors.home,right:"43%",top:"-19%",fontWeight:"bold"}}> Policy</Text>
-                <View style={{marginTop:-35,height:70,width:"100%"}}>
+                 <View style={{flexDirection:"column",left:"3%",marginBottom:"5%"}}>
+                <View style={{flexDirection:"row",marginBottom:"1%"}}>
+                 
+                <Text style={{color:"gray"}}>By continuing, I agree to the </Text>
+                <Text style={{color:colors.home,fontWeight:"bold"}}>Terms of use  </Text>
+                </View>
+                <View style={{flexDirection:"row",marginBottom:"1%"}}>
+                <Text style={{color:colors.home}}>&  Privacy  Policy</Text>
+                </View>
+                </View>
+                <View style={{marginBottom:"5%"}}>
                 <Button
-                style={{width:"40%"}}
+                style={{}}
                title="CONTINUE"
                  color={colors.home}
                  onPress={() => navigation.navigate('Account')}
                 />
                 </View>
-                <Text style={{right:"22%",color:"gray"}}>Having trouble logging in?</Text>
-                <Text style={{color:colors.home,fontWeight:"bold",left:"11%",top:"-6%"}}> Get help </Text>
+                <View style={{left:"3%"}}>
+               
+                <Text style={{color:"gray",marginBottom:"1%"}}>Having trouble logging in?</Text>
+                <Text style={{color:colors.home,fontWeight:"bold",right:"1%"}}> Get help </Text></View>
          
           </View>
         </View>
@@ -58,19 +67,19 @@ const modalView = ({navigation}) => {
 const styles = StyleSheet.create({
   centeredView: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    marginTop: 42,
+    right:"2%"
+  
+    
     
   },
   modalView: {
     margin: 10,
-    bottom:-200,
+    bottom:"-50%",
     width:"100%",
     height:"50%",
     backgroundColor: "white",
     padding: 30,
-    alignItems: "center",
+  
  
     },
  
