@@ -8,6 +8,7 @@ import Cake from '../screens/cakes&desserts';
 import Veg from '../screens/veg';
 import nonVeg from '../screens/nonVeg';
 
+
 const Stack = createStackNavigator();
 
 
@@ -22,6 +23,10 @@ const SearchStack =({navigation}) => {
       <Stack.Screen name="Cake" component={Cake}/>
       <Stack.Screen name="Veg" component={Veg}/>
       <Stack.Screen name="nonVeg" component={nonVeg}/>
+
+
+
+
     </Stack.Navigator>
     
   );
