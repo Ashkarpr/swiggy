@@ -1,4 +1,4 @@
-import { TabRouter } from "@react-navigation/native";
+
 import React, {useState} from "react";
 import { View,Text, TextInput,StyleSheet,Image,TouchableOpacity, ScrollView,Modal,Button} from "react-native";
 import Entypo from 'react-native-vector-icons/Entypo';
@@ -6,7 +6,7 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 
-const biriyani = () =>
+const biriyani = ({navigation}) =>
 {
     const [firstbiriyanimodal, setfirstbiriyanimodal] = useState(false)
     const [secondtbiriyanimodal, setsecondbiriyanimodal] = useState(false)
@@ -153,13 +153,13 @@ const biriyani = () =>
 
     {/* taping names like veg, nin-veg etc................. */}
       <ScrollView horizontal = {true} style={{backgroundColor:"white",height:"12%", marginTop: 1,flexDirection:"row"}}>
-        <TouchableOpacity >
+        <TouchableOpacity onPress={() => {navigation.navigate('Veg')}} >
           <Text style={styles.veg} >
             Veg
           </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity >
+        <TouchableOpacity onPress={() => {navigation.navigate('nonVeg')}} >
           <Text style={styles.nonveg} >
             Non-Veg
           </Text>
