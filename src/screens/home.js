@@ -15,7 +15,8 @@ const App = ({navigation}) => {
      
       <View style={{flexDirection:"column",width:"100%",height:"8%",padding:10,backgroundColor:"#fff",}}>
         <View style={{flexDirection:"row",marginRight:"45%",top:"1%",marginBottom:"1%"}}>
-          <TouchableOpacity>
+          <TouchableOpacity
+           onPress={() => navigation.navigate('Map')}>
           <View style={{flexDirection:"row"}} >
         <Entypo name="location" size={18} style={{top:"2%",marginRight:"5%"}}/>
         <Text style={{fontSize:20,fontWeight:"bold",fontFamily:"Times New Roman",marginRight:"50%"}}>Olavakode</Text>
