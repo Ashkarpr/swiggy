@@ -24,7 +24,7 @@ const modalView = ({navigation}) => {
           
               <Text style={{fontSize:20,fontWeight:"bold",marginBottom:10,color:"#022f45",marginRight:"1%"}}>Login</Text>
               <Text style={{fontSize:20,color:"gray",marginRight:"1%"}}>or</Text>
-              <Text style={{fontSize:20,fontWeight:"bold",color:"#022f45",marginBottom:-20}}>Signup</Text>
+              <Text style={{fontSize:20,fontWeight:"bold",color:"#022f45",}}>Signup</Text>
               </View>
               <TextInput
               style={{borderWidth:1,borderColor:"gray", width:"100%",height:40,borderRadius:10,marginBottom:"5%"}}
