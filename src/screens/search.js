@@ -4,9 +4,9 @@ import { View,Text, TextInput,StyleSheet,Image,TouchableOpacity, ScrollView} fro
 
 const swiggy = ({navigation})=>{
   return(
-    <ScrollView>
-    <View  style={{ flex:1, backgroundColor:"lightgray"}}>
-    <View style={{ marginTop:2, backgroundColor:"white"}}>
+    <ScrollView style={{backgroundColor:"lightgray"}}>
+    <View  style={{ flex:1}}>
+    <View style={{ justifyContent:"center",alignContent:"center",alignItems:"center",marginTop:2, backgroundColor:"white"}}>
       <TextInput style={styles.search}
         placeholder="   Search for restaurents and food">
       </TextInput>
@@ -21,60 +21,77 @@ const swiggy = ({navigation})=>{
        {'     '} Popular Cuisines
       </Text>
         
-       <View style={{paddingBottom:70,alignItems:"center", backgroundColor:"white" ,flexDirection:"row"}}>
+       <View style={{paddingBottom:"15%",alignItems:"center", backgroundColor:"white" ,flexDirection:"row"}}>
+        <View style={{marginLeft:"4.5%"}}>
          <TouchableOpacity
         onPress={() => {navigation.navigate('biriyani')}}>
           <Image style={{
-              resizeMode:"contain",
+             
               borderRadius:100,
-              marginLeft:30,
-              width:60,
-              height:60
+             
             }}
             source={require('../assets/biriyani1.jpg')} > 
           </Image><Text style={{
-            marginLeft:38
+            left:"15%",
+            top:"10%"
           }}>Biriyani</Text>
         </TouchableOpacity>
+        </View>
 
+        <View style={{marginLeft:"4%"}}>
         <TouchableOpacity
         onPress={() => {navigation.navigate('Cake')}}>
-          <Image style={{marginLeft:30,
-            borderRadius:100,width:60,
-            height:60,marginTop:20
+          <Image style={{
+            borderRadius:100,
+            top:"15%",
+            height:"57%"
+          
             }} source={require('../assets/cakesanddeserts1.jpg')}>
           </Image><Text style={{
-            marginLeft:36,marginTop:1
+            left:"15%",
+            top:"15%"
           }}>Cakes & {'\n'}Desserts</Text>
         </TouchableOpacity>
+        </View>
 
+        <View style={{marginLeft:"6%"}}>
         <TouchableOpacity
         onPress={() => {navigation.navigate('pizza')}}>
-          <Image style={{marginLeft:20, resizeMode:"contain",
-            borderRadius:100,width:60,
-            height:60
+          <Image style={{
+            borderRadius:100,
+         
+          
             }} source={require('../assets/pizza1.jpg')}>
           </Image><Text style={{
-            marginLeft:32
+             left:"25%",
+            top:"3%"
           }}>Pizzas</Text>
         </TouchableOpacity>
-       
+        </View>
+
+          <View style={{marginLeft:"5%"}}>
         <TouchableOpacity
         onPress={() => {navigation.navigate('North')}}>
-        <Image style={{marginLeft:20,
-            borderRadius:100, width:60,
-            height:60,marginTop:20
+        <Image style={{
+           
+            borderRadius:100, 
+            top:"10%"
+          
+            
             }} source={require('../assets/northindianfoods1.jpg')}>
         </Image><Text style={{
-            marginLeft:35
+            left:"27%",
+            top:"14%"
           }}>North{'\n'}Indian</Text>
       </TouchableOpacity>
+      </View>
+
         </View>
-       <View style={{
-            flex:1,marginTop:10,backgroundColor:"white"}}>            
-       </View>
- 
-    </View></ScrollView>
+    </View>
+    <View style={{marginTop:80, backgroundColor:"white",flex:1,paddingBottom:"200%"}}>
+
+    </View>
+    </ScrollView>
   )
 }
 
