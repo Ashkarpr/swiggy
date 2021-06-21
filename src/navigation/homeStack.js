@@ -1,7 +1,8 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from '../screens/home';
-import EarnStack from '../screens/earnStack';
+import Map from '../screens/map';
+
 
 const Stack = createStackNavigator();
 
@@ -9,10 +10,10 @@ const Stack = createStackNavigator();
 
 const HomeStack =({navigation}) => {
   return (
-    <Stack.Navigator headerMode={false}>
+    <Stack.Navigator initialRouteName="HomeScreen" headerMode={false}>
     
       <Stack.Screen name="Home" component={HomeScreen}/>
-      
+      <Stack.Screen name="Map" component={Map}/>
      
 
     </Stack.Navigator>

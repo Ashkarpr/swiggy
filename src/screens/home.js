@@ -4,31 +4,55 @@ import { View, Text, StyleSheet,ScrollView, TouchableOpacity ,Alert,Image,Button
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Feather from 'react-native-vector-icons/Feather';
+import Entypo from 'react-native-vector-icons/Entypo';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import colors from '../config/color';
 
 // create a component
 const App = ({navigation}) => {
   return (
+    <View>
+     
+      <View style={{flexDirection:"column",width:"100%",height:"8%",padding:10,backgroundColor:"#fff",}}>
+        <View style={{flexDirection:"row",marginRight:"45%",top:"1%",marginBottom:"1%"}}>
+          <TouchableOpacity
+           onPress={() => navigation.navigate('Map')}>
+          <View style={{flexDirection:"row"}} >
+        <Entypo name="location" size={18} style={{top:"2%",marginRight:"5%"}}/>
+        <Text style={{fontSize:20,fontWeight:"bold",fontFamily:"Times New Roman",marginRight:"50%"}}>Olavakode</Text>
+        </View></TouchableOpacity>
+        <TouchableOpacity>
+        <View style={{flexDirection:"row",top:"3%"}}>
+
+      <MaterialCommunityIcons name="brightness-percent" size={25} color="#4a4f51" style={{marginLeft:"43%"}} />
+      <Text style={{fontSize:16,fontFamily:"Times New Roman",fontWeight:"bold"}}> Offers</Text>
+      </View></TouchableOpacity>
+
+      </View>
+      <Text style={{fontSize:12,color:colors.secondary}}>palakkad Junction, Kallekkulangra, Olavako...</Text>
+      </View>
+      
     <ScrollView>
     <View style={styles.container}>
      
-
-      <View style={{height:110,width:175,borderWidth:1,right:"28%",borderRadius:10,borderColor:"grey"}}>
+    <View style={{flexDirection:"row",}}>    
+        <View style={{borderWidth:1,borderRadius:10,borderColor:"grey",width:"48%",marginRight:"5%",height:"70%"}}>
       <TouchableOpacity
        onPress={() => navigation.navigate('Search')}>
+       
         <Text style={{fontWeight:"bold",left:"5%",fontSize:20,top:10}}>
         Restaurants
         </Text>
         <Text style={{left:"5%",top:10}}>Enjoy your</Text>
           <Text style={{left:"5%",top:10}}>favourite treats</Text> 
           <Image
-             style={{height:50,width:70,left:"61%",top:-7}}
+             style={{height:50,width:70,left:"60%",top:-7}}
              source={require('../assets/food.png')}/>
               <AntDesign name="arrowright" size={20} color="#4a4f51" style={{top:-35,left:10 }} />
           </TouchableOpacity>
       </View> 
     
-      <View style={{height:110,width:175,borderWidth:1,left:"28%",borderRadius:10,borderColor:"grey",top:-110,marginBottom:-120}}>
+      <View style={{borderWidth:1,borderRadius:10,borderColor:"grey",width:"48%",marginRight:"5%",height:"70%"}}>
       <TouchableOpacity
        onPress={() => {navigation.navigate('Search')}}>
         <Text style={{fontWeight:"bold",left:"5%",fontSize:20,top:10}}>
@@ -42,85 +66,32 @@ const App = ({navigation}) => {
               <AntDesign name="arrowright" size={20} color="#4a4f51" style={{top:-55,left:10 }} />
           </TouchableOpacity>
       </View>
-      <View style={{height:70,width:10,backgroundColor:"#f30421",top:40,marginBottom:60,borderRadius:10,right:"51%"}}></View>
-    <View style={{left:"-23%"}}>
-    <TouchableOpacity
-       onPress={() => Alert.alert('Simple Button pressed')}>
-        <Text style={{left:"20%",top:-90,fontWeight:"bold"}}>We're here to help. Our resturant and {"\n"} essential delevery services are open from:</Text>
+      </View>
+      <View style={{flexDirection:"row",marginBottom:"5%"}}>
+      <View style={{width:10,backgroundColor:"#f30421",borderRadius:10,left:"3%"}}></View>
+    <View style={{}}>
+   
+        <Text style={{left:"5%",fontWeight:"bold"}}>We're here to help. Our resturant and{"\n"}essential delevery services are open from:</Text>
        
-        <Text style={{top:-80,color:"grey",left:"20%"}}>8:00 AM to 7:30 pm </Text>
-        </TouchableOpacity>
+        <Text style={{color:"grey",left:"5%"}}>8:00 AM to 7:30 pm </Text>
+     
+        </View>
         </View>
         
 
         <Image
-             style={{height:150,width:"110%",marginTop:-40,borderRadius:10}}
+             style={{height:150,width:"100%",borderRadius:7,marginBottom:"10%"}}
              source={require('../assets/offer.png')}/>
-
-              <FontAwesome name="thumbs-o-up" size={25} color="#280d60" style={{right:"49%",top:25}} />
-             <Text style={{fontSize:20,fontWeight:"bold",right:"22%",marginBottom:20}}> Top Picks For You</Text>
-
-            <ScrollView  horizontal={true} style={{top:10,width:"110%"}}>  
-
-            <View style={{height:110,width:175,borderWidth:1,right:"28%",borderRadius:10,borderColor:"grey",marginLeft:30,}}>
-        <TouchableOpacity>
+            <View style={{flexDirection:"row",}}>
+              <FontAwesome name="thumbs-o-up" size={25} color="#280d60" style={{}} />
+             <Text style={{fontSize:20,fontWeight:"bold",marginBottom:20}}> Top Picks For You</Text>
+             </View>
        
-        <Text style={{fontWeight:"bold",left:"5%",fontSize:20,top:10}}>
-        Restaurants
-        </Text>
-        <Text style={{left:"5%",top:10}}>Enjoy your</Text>
-          <Text style={{left:"5%",top:10}}>favourite treats</Text> 
-          <Image
-             style={{height:50,width:70,left:"61%",top:-7}}
-             source={require('../assets/food.png')}/>
-          </TouchableOpacity>
-      </View> 
-
-      <View style={{height:110,width:175,borderWidth:1,right:"28%",borderRadius:10,borderColor:"grey",marginLeft:10}}>
-      <TouchableOpacity>
-        <Text style={{fontWeight:"bold",left:"5%",fontSize:20,top:10}}>
-        Restaurants
-        </Text>
-        <Text style={{left:"5%",top:10}}>Enjoy your</Text>
-          <Text style={{left:"5%",top:10}}>favourite treats</Text> 
-          <Image
-             style={{height:50,width:70,left:"61%",top:-7}}
-             source={require('../assets/food.png')}/>
-          </TouchableOpacity>
-      </View> 
-      <View style={{height:110,width:175,borderWidth:1,right:"28%",borderRadius:10,borderColor:"grey",marginLeft:10}}>
-      <TouchableOpacity>
-      
-        <Text style={{fontWeight:"bold",left:"5%",fontSize:20,top:10}}>
-        Restaurants
-        </Text>
-        <Text style={{left:"5%",top:10}}>Enjoy your</Text>
-          <Text style={{left:"5%",top:10}}>favourite treats</Text> 
-          <Image
-             style={{height:50,width:70,left:"61%",top:-7}}
-             source={require('../assets/food.png')}/>
-          </TouchableOpacity>
-      </View> 
-      <View style={{height:110,width:175,borderWidth:1,right:"28%",borderRadius:10,borderColor:"grey",marginLeft:10}}>
-      <TouchableOpacity>
-     
-        <Text style={{fontWeight:"bold",left:"5%",fontSize:20,top:10}}>
-        Restaurants
-        </Text>
-        <Text style={{left:"5%",top:10}}>Enjoy your</Text>
-          <Text style={{left:"5%",top:10}}>favourite treats</Text> 
-          <Image
-             style={{height:50,width:70,left:"61%",top:-7}}
-             source={require('../assets/food.png')}/>
-          </TouchableOpacity>
-      </View> 
-       
-        </ScrollView>
 
       {/* scroll  view horizontal for popular brand start */}
-        <Text style={{marginTop:50,fontSize:20,fontWeight:"bold",right:"30%"}} >Popular Brands</Text>
+        <Text style={{marginTop:"15%",fontSize:20,fontWeight:"bold",}} >Popular Brands</Text>
 
-        <ScrollView  horizontal={true} style={{top:10,width:"110%",height:400,}}>
+        <ScrollView  horizontal={true} style={{top:10,width:"110%",height:400,right:"1%"}}>
           <View style={{marginTop:20,padding:20}}>
           <View style={{justifyContent:"space-between",flexDirection:"row",marginBottom:80}}>
        <View style={{borderWidth:2,height:100,width:100,borderColor:"grey",borderRadius:100,marginRight:40}}>
@@ -205,8 +176,8 @@ const App = ({navigation}) => {
 
        {/* scroll view horizontal   horizontal for popular curations start */}
 
-       <Text style={{right:"25%",fontWeight:"bold",fontSize:20, marginTop:30, marginBottom:30}}>Popular Curations</Text>
-        <ScrollView  horizontal={true} style={{top:10,width:"110%",height:180,marginTop:10,padding:10,}}>
+       <Text style={{fontWeight:"bold",fontSize:20, marginTop:30, marginBottom:30}}>Popular Curations</Text>
+        <ScrollView  horizontal={true} style={{width:"110%",height:180,padding:10,right:"1%"}}>
           <View style={{}}>
             <TouchableOpacity
              onPress={() => {navigation.navigate('biriyani')}}>
@@ -301,6 +272,7 @@ const App = ({navigation}) => {
       </View>
 
     </ScrollView>
+    </View>
   );
 };
 
@@ -309,8 +281,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding:20,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: 'space-between',
+
     backgroundColor: '#fff',
     height:"100%",
     width:"100%",
