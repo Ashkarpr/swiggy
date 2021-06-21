@@ -80,7 +80,7 @@ const App = ({navigation}) => {
         
 
         <Image
-             style={{height:150,width:"100%",borderRadius:7,marginBottom:"10%"}}
+             style={{height:180,width:"100%",borderRadius:7,marginBottom:"10%"}}
              source={require('../assets/offer.png')}/>
             <View style={{flexDirection:"row",}}>
               <FontAwesome name="thumbs-o-up" size={25} color="#280d60" style={{}} />
